@@ -1,9 +1,26 @@
+@import url(./fonts.css);
+
+.slider-wrapper a{
+    color: green;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.slider-wrapper a:hover{
+    color: white;
+    background-color: green;
+}
+
 .slider-container{
     background-color: rgb(0, 50, 40);
     margin: 0px 3%;
     grid-area: aside-slider;
     min-height: 500px;
     padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .slider-wrapper{
@@ -15,23 +32,80 @@
 .slider{
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     aspect-ratio: 16/9;
     scroll-snap-type:x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.76rem rgba(0, 0, 0, 0.3);
     border-radius: 0.5rem;
+
+    position: relative;
+    z-index: 0;
 }
 
-.slider img{
+.slider div{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    padding: 0;
 }
 
-.slider img:hover{
-    cursor: pointer;
-    filter: brightness(0.9);
+.slider div blockquote{
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    color: black;
+    font-size: 4rem;
+    font-family: "Lora", serif;
 }
+
+.slider div blockquote i{
+    padding: 1.2rem;
+}
+
+
+
+.slider div blockquote p.small{
+    font-size: 0.5rem;
+    text-align: center;
+    margin-right: 100px;
+    font-family: sans-serif;
+}
+
+.slider div blockquote p.medium , .slider div blockquote i.medium{
+    padding: 0.2rem;font-family: sans-serif;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:680px){
+    .slider div blockquote{
+        font-size: 8vw;
+    }
+    .slider div blockquote p.small{
+        font-size: calc(0.5vw);
+        margin-right: 50vw;
+    }
+}
+
+.left-text{
+    text-align: right;
+    font-size: 25px;
+    margin-right: 100px;
+}
+
+.left-text p{
+    margin: 0;
+    padding: 0;
+}
+
+.slider div img{
+    height: 100%;
+    z-index: 2;
+    width: 100%;
+}
+
+
 
 .slider-nav{
     display: flex;

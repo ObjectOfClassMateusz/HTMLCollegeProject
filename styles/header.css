@@ -75,7 +75,7 @@ header > header > ul > li > a::after {
     height: 1px;
     background-color: black;
     position: relative;
-    animation: display-line 1s ease-in-out forwards;
+    animation: display-line 2s ease-in forwards;
 }
 
 @keyframes display-line {
