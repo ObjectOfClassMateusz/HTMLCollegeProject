@@ -1,7 +1,11 @@
 @import url(./roundButton.css);
 @import url(./header.css);
+@import url(./side-nav.css);
 @import url(./aside-event-slider.css);
 @import url(./event.css);
+
+@import url(./footer.css);
+
 
 *{
     margin: 0;
@@ -12,6 +16,7 @@ html, body {
     height: 100%;
     background-color: white;
 }
+
 
 /*
 rgb(0, 50, 40);
@@ -49,12 +54,18 @@ i.center-title
 }
 
 .main{
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "aside-slider aside-slider aside-slider";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     gap: 10px;
-    
+}
+
+.main-content
+{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 

@@ -10,7 +10,6 @@ header{
     align-items: center;
     padding: 3px;
     box-sizing: border-box;
-    grid-area: header;
 }
 header h1{
     color: white;

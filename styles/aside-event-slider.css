@@ -17,7 +17,6 @@
 .slider-container{
     background-color: rgb(0, 50, 40);
     margin: 0px 3%;
-    grid-area: aside-slider;
     min-height: 500px;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -64,8 +63,6 @@
     padding: 1.2rem;
 }
 
-
-
 .slider div blockquote p.small{
     font-size: 0.5rem;
     text-align: center;
@@ -73,8 +70,10 @@
     font-family: sans-serif;
 }
 
-.slider div blockquote p.medium , .slider div blockquote i.medium{
-    padding: 0.2rem;font-family: sans-serif;
+.slider div blockquote p.medium , .slider div blockquote i.medium
+{
+    padding-left: 0.8rem;
+    font-family: sans-serif;
     font-size: 1rem;
 }
 
