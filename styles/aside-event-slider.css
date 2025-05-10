@@ -60,7 +60,13 @@
 }
 
 .slider div blockquote i{
-    padding: 1.2rem;
+    padding: 0.8rem;
+}
+
+@media screen and (max-width:837px) {
+    .slider div blockquote i{
+        font-size: 8vw;
+    }
 }
 
 .slider div blockquote p.small{
@@ -77,15 +83,7 @@
     font-size: 1rem;
 }
 
-@media screen and (max-width:680px){
-    .slider div blockquote{
-        font-size: 8vw;
-    }
-    .slider div blockquote p.small{
-        font-size: calc(0.5vw);
-        margin-right: 50vw;
-    }
-}
+
 
 .left-text{
     text-align: right;
@@ -99,11 +97,38 @@
 }
 
 .slider div img{
-    height: 100%;
     z-index: 2;
     width: 100%;
+    height: 100%;
 }
 
+#slideOne{
+    background-image: url(../img/pexels-olly-3762800.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100% 110%;
+}
+#slideTwo{
+    background-image: url(../img/pexels-cottonbro-3205480.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100% ;
+    background-position-y: center;
+}
+#slideThree{
+    background-image: url(../img/output.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100% ;
+    background-position-y: center;
+}
+#slideFour{
+    background-image: url(../img/guy-from-china.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100% ;
+    background-position-y: center;
+}
 
 
 .slider-nav{
@@ -131,4 +156,45 @@
 
 .slider::-webkit-scrollbar{
     display: none;
+}
+
+@media screen and (max-width:880px){
+    .slider div blockquote{
+        font-size: 8vw;
+    }
+    .slider div blockquote p.small{
+        font-size: calc(0.5vw);
+        margin-right: 50vw;
+    }
+    .slider div blockquote i.white-text{
+        font-size: 4vw;
+    }
+    .slider div blockquote p.white-text{
+        font-size: 2vw;
+    }
+
+    #slideThree i.white-text{
+        font-size: 2vw;
+    }
+
+    
+
+    .slider-wrapper a{
+    color: green;
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 20%;
+    }
+}
+
+@media screen and (max-width:836px){
+
+    .left-text{
+        text-align: right;
+        font-size: 3vw;
+        margin-right: 9vw;
+    }
+
 }
