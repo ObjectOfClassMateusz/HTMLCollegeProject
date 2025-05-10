@@ -1,15 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    
+    cursor: url(../../img/cursor-kopia.png) , auto;
 }
 body{
     background-color: rgb(255, 255, 238);
+    
 }
 .background{
-    width: 100%;
+    width: 100vw;
     height: 50vh;
     background: linear-gradient(green,rgb(255, 255, 238));
-
     position: absolute;
     top: 0;
     left: 0;
@@ -31,6 +33,21 @@ body{
     margin-bottom: 10px;
 }
 
+a.logo img {
+    border-radius: 50%;
+    width: 150px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    a.logo img{
+       width: 23vw;
+    }  
+}
+
+
+
 
 
 .title{
@@ -49,26 +66,46 @@ body{
     text-align:left;
     background-color: white;
     color: rgb(0, 50, 40);
+    padding: 5px;
 }
-
-.main-content center img {
-    border-radius: 50%;
-    width: 150px;
-    margin: 10px;
-}
-
 
 
 .board-container{
     display: flex;
     width: 100%;
-}
-.board-element{
-    flex: 1;
-    margin: 10px;
-    padding: 10px;
+    padding: 2px;
 }
 
-i{
+.board-element{
+    flex: 1;
+    margin: 5px;
+    
+}
+
+.thread-element{
+    margin: 8px;
+}
+
+.thread-element img {
+    width: 250px;
+    border: rgb(0, 50, 40) 1px solid;
+}
+
+b{
     text-decoration: underline;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(0, 50, 40);
+}
+
+li a:hover{
+    text-decoration: underline;
+    color: green;
+    
 }
