@@ -7,6 +7,7 @@
     <title>Biblioteka | Szkoła Dziwnych Działań w Warszawie</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/library.js" defer></script>
 </head>
 <body>
     <main class="main">
@@ -47,8 +48,16 @@
                 </button>
             </sidepanel>
                 
-            <div class="library-content">
-                <h1>Biblioteka</h1>
+            <div class="library-decor">
+                <h1 id="library-title">Biblioteka</h1>
+
+                <img id="open-book-img" src="./img/library/open-book.png">
+                <img id="library-img" src="./img/library/library-technobulka.jpg">
+
+            </div>
+            
+            <div class ="library-content">
+                <h2>Biblioteka uczelniana</h2>
 
                 <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
@@ -60,20 +69,39 @@
 
                 <h2>Polecane tytuły</h2>
 
+                <hr>
+                <p>
+                <span class="book-title">Technika układów cyfrowych</span><br>
+                Autorzy: Kruszewski, Rydzewski, Śluzek
+                </p>
+                <a class="borrow-button" href="#">Wypożycz</a>
+
+                <hr>
+                <p>
+                <span class="book-title">Wprowadzenie do elektroniki</span><br>
+                Autorzy: Parafieniuk, Saeled
+                </p>
+                <a class="borrow-button" href="#">Wypożycz</a>
+
+                <hr>
+                <p>
+                <span class="book-title">Polska moich marzeń</span><br>
+                Autor: Jarosław Kaczyński
+                </p>
+                <a class="borrow-button" href="#">Wypożycz</a>
+                <hr>
+
+                <h2>Wyszukiwanie i wypożyczanie książek</h2>
+
                 <p>
                 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
                 </p>
 
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-                </p>
-
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-                </p>
-
-                <img class="open-book-img" src="./img/library/open-book.png">
-
+                <form action="https://httpbin.org/post" method="post">
+                    <label for="searchphrase">Tytuł do wyszukania:</label>
+                    <input type="search" name="searchphrase" id="searchphrase" placeholder="Wpisz frazę" required>
+                    <input type="submit" value="Szukaj">
+                </form>
             </div>
         </section>
         <footer class="footer">
