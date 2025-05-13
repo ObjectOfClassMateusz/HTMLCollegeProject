@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+.library-content {
+    padding: 30px;
+    font-family: 'Cabin';
+}
+
+.library-content h1 {
+    font-size: 6vw;
+    margin: 20px;
+}
+
+.library-content h2 {
+    font-size: 4vw;
+    margin: 20px;
+}
+
+.library-content p::first-letter {
+    font-size: 300%;
+}
+
+.open-book-img {
+    width: 100%;
+    position: fixed;
+}
+
