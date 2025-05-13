@@ -28,9 +28,15 @@ body{
 
 .main-content center header{
     border: 1px solid black;
-    width: 60%;
+    width: 800px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width:900px){
+    .main-content center header{
+        width: 80vw;
+    }
 }
 
 a.logo img {
@@ -69,9 +75,15 @@ a.logo img {
     padding: 5px;
 }
 
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .board-container{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 2px;
 }
@@ -83,12 +95,21 @@ a.logo img {
 }
 
 .thread-element{
+    flex: 1;
     margin: 8px;
 }
 
 .thread-element img {
-    width: 250px;
+    width: 220px;
     border: rgb(0, 50, 40) 1px solid;
+}
+
+.thread-element p{
+    width: 40%;
+}
+
+.thread-element p , .thread-element b{
+    color: rgb(0, 50, 40);
 }
 
 b{
