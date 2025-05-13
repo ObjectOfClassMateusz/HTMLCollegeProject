@@ -1,27 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
 
+.library-decor {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.library-decor h1#library-title {
+    font-size: 10vw;
+    top: 0;
+    right: 0;
+    margin: 10px;
+
+    position: absolute;
+    z-index: 10;
+
+    font-family: 'Cabin';
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: white;
+    text-shadow: black 5px 5px 10px;
+}
+
+.library-decor img {
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.library-decor img#open-book-img {
+    bottom: 0;
+    z-index: 9;
+}
+
+.library-decor img#library-img {
+    height: 100%;
+    top: 0;
+    z-index: 8;
+}
+
+.library-decor::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(to top, white, transparent);
+    z-index: 11;
+}
+
+
 .library-content {
-    padding: 30px;
+    position: relative;
+    padding: 0px 100px;
     font-family: 'Cabin';
 }
 
-.library-content h1 {
-    font-size: 6vw;
-    margin: 20px;
+.library-content h2 {
+    font-size: 4em;
+    margin: 20px 10px;
+    font-weight: bold;
 }
 
-.library-content h2 {
-    font-size: 4vw;
-    margin: 20px;
+.library-content p {
+    font-size: 1.25em;
+    margin-bottom: 10px;
 }
 
 .library-content p::first-letter {
-    font-size: 300%;
+    font-size: 2em;
 }
 
-.open-book-img {
+.library-content hr {
+    margin: 20px 0px;
+    border: 1px solid darkgreen;
+}
+
+
+.library-content .borrow-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #008000;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    margin: 10px;
+    font-size: 1.1em;
+    user-select: none;
+    transition: linear 0.1s;
+}
+
+.library-content .borrow-button:hover {
+    background-color: #01d301;
+}
+
+.library-content .borrow-button:active {
+    background-color: #005700;
+}
+
+.library-content .book-title {
+    font-style: italic;
+    font-size: 1.75em;
+}
+
+
+@media screen and (max-width: 600px) {
+    .library-decor {
+        height: 100vw;
+    }
+
+    .library-content {
+        padding: 0px 10px;
+    }
+    
+    .library-content h2 {
+        margin-left: 10px;
+        font-size: 2.5em;
+    }
+
+    .library-content .book-title {
+        font-size: 1.5em;
+    }
+}
+
+
+.library-content label {
+    margin: 10px 10px 10px 0px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.library-content input[type=search] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #747474;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    transition: linear 0.1s;
+}
+
+.library-content input[type=search]:hover {
+    box-shadow: inset 0 0 5px #c4c4c4;
+}
+
+.library-content input[type=search]:focus {
+    box-shadow: none;
+}
+
+
+.library-content input[type=submit] {
+    padding: 15px;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    background-color: #008000;
+    color: white;
+    font-size: 1.1em;
+    transition: linear 0.1s;
+}
+
+.library-content input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #01d301;
+}
+
+.library-content input[type=submit]:active {
+    cursor: pointer;
+    background-color: #005700;
+}
+
+.library-content::after {
+    display: block;
+    content: '';
     width: 100%;
-    position: fixed;
+    height: 50px;
 }
 
