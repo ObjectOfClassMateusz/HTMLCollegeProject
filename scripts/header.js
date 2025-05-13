@@ -1,7 +1,7 @@
 function backNavShowsUp()
 {
-    var backNavVariable = document.getElementById("backNavId");
-    var backNavButtonVariable = document.getElementById("backNavButtId");
+    let backNavVariable = document.getElementById("backNavId");
+    let backNavButtonVariable = document.getElementById("backNavButtId");
     
     if (backNavVariable.style.visibility == "") 
     {

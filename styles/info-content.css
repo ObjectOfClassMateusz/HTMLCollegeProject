@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+.info-content {
+    font-family: 'Cabin';
+    font-size: 1.2em;
+    box-sizing: border-box;
+    padding: 0px 100px;
+}
+
+.info-content h1 {
+    font-size: 4em;
+    margin: 10px 10px 10px 20px;
+}
+
+.info-content p::first-letter {
+    font-size: 2em;
+}
+
+.info-content h2 {
+    font-size: 3em;
+    margin: 10px 100px;
+}
+
+.info-content hr {
+    border: 1px solid green;
+    margin: 30px 0px;
+}
+
+.info-content .header-right {
+    text-align: right;
+}
+
+.info-content .faculty-img-left {
+    display: flex;
+    align-items: center;
+}
+
+.info-content img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+
