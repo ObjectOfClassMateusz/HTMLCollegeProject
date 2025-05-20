@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+.form-page {
+    font-family: 'Cabin';
+    font-size: 1.4em;
+    box-sizing: border-box;
+    padding: 0px 100px;
+}
+
+.form-page h1 {
+    font-size: 2.5em;
+    margin-left: 50px;
+}
+

@@ -10,6 +10,8 @@
 
 @import url(./library.css);
 
+@import url(./form-styling.css);
+
 
 *{
     margin: 0;
