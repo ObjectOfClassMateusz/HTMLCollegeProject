@@ -5,10 +5,102 @@
     font-size: 1.4em;
     box-sizing: border-box;
     padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-page h1 {
     font-size: 2.5em;
     margin-left: 50px;
+}
+
+.form-page form {
+    box-sizing: border-box;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px black;
+    padding: 30px;
+    margin: 30px 0px;
+    width: min(100%, 1000px);
+}
+
+.form-page fieldset {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-page input[type=text], .form-page input[type=number] {
+    border: 2px solid green;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #438046;
+    padding: 5px;
+    margin: 5px;
+    font-size: 0.7em;
+    transition: linear 0.1s;
+}
+.form-page input[type=text]:hover, .form-page input[type=number]:hover {
+    box-shadow: inset 0 0 5px #acb1ac;
+}
+.form-page input[type=text]:focus, .form-page input[type=number]:focus {
+    box-shadow: inset 0 0 5px #b3ffb3;
+}
+
+
+.form-page select {
+    padding: 7px;
+    margin: 10px;
+    font-size: 0.7em;
+    border: none;
+    border-bottom: 3px solid #006b00;
+    border-radius: 10px;
+    background-color: #019701;
+    box-shadow: 0px 5px 15px black;
+    color: white;
+    transition: linear 0.1s;
+}
+.form-page select:hover {
+    background-color: #01c201;
+}
+.form-page select:focus {
+    background-color: #007e00;
+    border-bottom: 3px solid #004100;
+}
+
+
+
+.form-page input[type=submit] {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 0.7em;
+    box-shadow: 0px 0px 15px black;
+    transition: linear 0.1s;
+}
+
+.form-page input[type=submit]:hover {
+    background-color: #00bd00;
+    cursor: pointer;
+}
+
+.form-page input[type=submit]:active {
+    background-color: #006300;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .form-page {
+        padding: 0px 0px;
+    }
+
+    .form-page form {
+        margin: 30px 0px;
+        padding: 30px 10px;
+    }
 }
 

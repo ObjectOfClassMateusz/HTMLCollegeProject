@@ -50,9 +50,34 @@
                 
             <div class="form-page">
 
-                <h1>Internetowa rejestracja kandydatów</h1>
+                <h1>Internetowa Rejestracja Kandydatów</h1>
 
-                
+                <form method="post" action="https://httpbin.org/post">
+                    
+                    <fieldset>
+                        <legend>Dane osobowe</legend>
+
+                        <label for="candidate-name">Imię (imiona):</label>
+                        <input type="text" name="candidate-name" id="candidate-name" required><br>
+
+                        <label for="surname">Nazwisko:</label>
+                        <input type="text" name="surname" id="surname" required><br>
+
+                        <label for="age">Wiek:</label>
+                        <input type="number" min="16" max="120" name="age" id="age" required><br>
+
+                        <label for="gender">Płeć:</label>
+                        <select name="gender" id="gender" required>
+                            <option>Kobieta</option>
+                            <option>Mężczyzna</option>
+                            <option>Inna</option>
+                        </select><br>
+
+                    </fieldset>
+
+                    <input type="submit">
+
+                </form>
 
             </div>
 
