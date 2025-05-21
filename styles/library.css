@@ -142,8 +142,9 @@
     font-weight: bold;
 }
 
-.library-content input[type=search] {
+.library-content .searchbar {
     padding: 10px;
+    padding-left: 40px;
     margin: 5px;
     border: 1px solid #dbdbdb;
     border-radius: 10px;
@@ -151,6 +152,10 @@
     box-sizing: border-box;
     font-size: 1.1em;
     transition: linear 0.1s;
+    background-color: white;
+    background-image: url('../img/library/search.png');
+    background-position: 7px 5px;
+    background-repeat: no-repeat;
 }
 
 .library-content input[type=search]:hover {

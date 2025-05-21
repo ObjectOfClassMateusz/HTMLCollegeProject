@@ -66,13 +66,46 @@
                         <label for="age">Wiek:</label>
                         <input type="number" min="16" max="120" name="age" id="age" required><br>
 
+                        <label for="birthplace">Miejsce urodzenia:</label>
+                        <input type="text" name="birthplace" id="birthplace" required><br>
+
+                        <label for="birthdate">Data urodzenia</label>
+                        <input type="date" name="birthdate" id="birthdate" required><br>
+
                         <label for="gender">Płeć:</label>
                         <select name="gender" id="gender" required>
-                            <option>Kobieta</option>
-                            <option>Mężczyzna</option>
-                            <option>Inna</option>
+                            <option disabled selected>--Wybierz--</option>
+                            <option value="female">Kobieta</option>
+                            <option value="male">Mężczyzna</option>
+                            <option value="other">Inna</option>
                         </select><br>
 
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required><br>
+
+                        <label for="phonenum">Telefon (opcjonalnie):</label>
+                        <input type="tel" name="phonenum" id="phonenum">
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Przyjęcie na uczelnię</legend>
+                        
+                        <label for="document-type">Rodzaj dokumentu uprawniającego do podjęcia studiów:</label>
+                        <select name="document-type" id="document-type" required>
+                            <option disabled selected>--Wybierz--</option>
+                            <option>Matura (formuła 2023)</option>
+                            <option>Matura (formuła 2015)</option>
+                            <option>Matura (formuła sprzed 2015 r.)</option>
+                            <option>Matura europejska</option>
+                            <option>Tegoroczny laureat Olimpiady</option>
+                        </select><br>
+
+                        <label for="document-year">Rok uzyskania dokumentu:</label>
+                        <input type="number" name="document-year" id="document-year" min="1900" max="2099" required><br>
+
+                        <label for="document-id">Identyfikator dokumentu:</label>
+                        <input type="text" name="document-id" id="document-id" required>
                     </fieldset>
 
                     <input type="submit">

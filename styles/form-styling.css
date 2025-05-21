@@ -28,28 +28,44 @@
     border: 2px solid green;
     border-radius: 10px;
     padding: 10px;
+    margin: 10px 0px;
 }
 
-.form-page input[type=text], .form-page input[type=number] {
-    border: 2px solid green;
+.form-page legend {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-page input[type=text], .form-page input[type=number],
+.form-page input[type=email], .form-page input[type=tel],
+.form-page input[type=date] {
+    border: 2px solid beige;
     border-radius: 5px;
     box-shadow: inset 0 0 5px #438046;
     padding: 5px;
     margin: 5px;
     font-size: 0.7em;
-    transition: linear 0.1s;
+    font-family: Cabin;
+    transition: linear 0.2s;
 }
-.form-page input[type=text]:hover, .form-page input[type=number]:hover {
+.form-page input[type=text]:hover, .form-page input[type=number]:hover,
+.form-page input[type=email]:hover, .form-page input[type=tel]:hover,
+.form-page input[type=date]:hover {
     box-shadow: inset 0 0 5px #acb1ac;
+    border: 2px solid green;
 }
-.form-page input[type=text]:focus, .form-page input[type=number]:focus {
+.form-page input[type=text]:focus, .form-page input[type=number]:focus,
+.form-page input[type=email]:focus, .form-page input[type=tel]:focus,
+.form-page input[type=date]:focus {
     box-shadow: inset 0 0 5px #b3ffb3;
+    border: 2px solid green;
 }
 
 
 .form-page select {
     padding: 7px;
     margin: 10px;
+    font-family: Cabin;
     font-size: 0.7em;
     border: none;
     border-bottom: 3px solid #006b00;
@@ -76,6 +92,7 @@
     border: none;
     background-color: green;
     color: white;
+    font-family: Cabin;
     font-size: 0.7em;
     box-shadow: 0px 0px 15px black;
     transition: linear 0.1s;
