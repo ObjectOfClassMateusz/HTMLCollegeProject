@@ -6,6 +6,8 @@
     font-size: 1.4em;
     box-sizing: border-box;
     padding: 0px 100px;
+    width: min(100%, 1600px);
+    margin: auto;
     margin-bottom: 50px;
 }
 

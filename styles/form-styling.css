@@ -24,6 +24,12 @@
     width: min(100%, 1000px);
 }
 
+.form-page form h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
 .form-page fieldset {
     border: 2px solid green;
     border-radius: 10px;
@@ -34,6 +40,14 @@
 .form-page legend {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.form-page label {
+    transition: linear 0.2s;
+    color: black;
+}
+.form-page label:hover {
+    color: green;
 }
 
 .form-page input[type=text], .form-page input[type=number],
@@ -67,6 +81,7 @@
     margin: 10px;
     font-family: Cabin;
     font-size: 0.7em;
+    text-wrap: wrap;
     border: none;
     border-bottom: 3px solid #006b00;
     border-radius: 10px;
@@ -83,6 +98,15 @@
     border-bottom: 3px solid #004100;
 }
 
+
+.form-page .radio-fieldset {
+    border: 1px solid green;
+}
+
+.form-page .radio-legend {
+    font-weight: normal;
+    text-transform: none;
+}
 
 
 .form-page input[type=submit] {

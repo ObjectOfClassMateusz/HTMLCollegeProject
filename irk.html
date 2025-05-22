@@ -7,7 +7,6 @@
     <title>Biblioteka | Szkoła Dziwnych Działań w Warszawie</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <script src="./scripts/header.js"></script>
-    <script src="./scripts/library.js" defer></script>
 </head>
 <body>
     <main class="main">
@@ -53,6 +52,7 @@
                 <h1>Internetowa Rejestracja Kandydatów</h1>
 
                 <form method="post" action="https://httpbin.org/post">
+                    <h2>Rejestracja na semestr zimowy 2025/2026</h2>
                     
                     <fieldset>
                         <legend>Dane osobowe</legend>
@@ -63,9 +63,6 @@
                         <label for="surname">Nazwisko:</label>
                         <input type="text" name="surname" id="surname" required><br>
 
-                        <label for="age">Wiek:</label>
-                        <input type="number" min="16" max="120" name="age" id="age" required><br>
-
                         <label for="birthplace">Miejsce urodzenia:</label>
                         <input type="text" name="birthplace" id="birthplace" required><br>
 
@@ -74,7 +71,7 @@
 
                         <label for="gender">Płeć:</label>
                         <select name="gender" id="gender" required>
-                            <option disabled selected>--Wybierz--</option>
+                            <option disabled selected value="">--Wybierz--</option>
                             <option value="female">Kobieta</option>
                             <option value="male">Mężczyzna</option>
                             <option value="other">Inna</option>
@@ -93,20 +90,82 @@
                         
                         <label for="document-type">Rodzaj dokumentu uprawniającego do podjęcia studiów:</label>
                         <select name="document-type" id="document-type" required>
-                            <option disabled selected>--Wybierz--</option>
-                            <option>Matura (formuła 2023)</option>
-                            <option>Matura (formuła 2015)</option>
-                            <option>Matura (formuła sprzed 2015 r.)</option>
-                            <option>Matura europejska</option>
-                            <option>Tegoroczny laureat Olimpiady</option>
+                            <option disabled selected value="">--Wybierz--</option>
+                            <option value="matura-2023">Matura (formuła 2023)</option>
+                            <option value="matura-2015">Matura (formuła 2015)</option>
+                            <option value="matura-pre2015">Matura (formuła sprzed 2015 r.)</option>
+                            <option value="european-finals">Matura europejska</option>
+                            <option value="olimpics-laureate">Tegoroczny laureat Olimpiady</option>
                         </select><br>
 
                         <label for="document-year">Rok uzyskania dokumentu:</label>
                         <input type="number" name="document-year" id="document-year" min="1900" max="2099" required><br>
 
                         <label for="document-id">Identyfikator dokumentu:</label>
-                        <input type="text" name="document-id" id="document-id" required>
+                        <input type="text" name="document-id" id="document-id" required><br>
+
+                        <label for="index-number">Numer indeksu (opcjonalne, dotyczy tylko osób, które studiowały już na uczelni):</label>
+                        <input type="text" name="index-number" id="index-number"><br>
                     </fieldset>
+
+                    <fieldset>
+                        <legend>Studia</legend>
+
+                        <label for="primary-field-of-study">Kierunek studiów:</label>
+                        <select name="primary-field-of-study" id="primary-field-of-study" required>
+                            <option disabled selected value="">--Wybierz--</option>
+                            <optgroup label="Wydział Filozofii">
+                                <option>Filozofia stosowana</option>
+                                <option>Filozofia ogólna</option>
+                                <option>Historiozofia</option>
+                                <option>Filozofia natury</option>
+                            </optgroup>
+                            <optgroup label="Wydział Chemiczny">
+                                <option>Produkcja i badanie zawartości alkoholi</option>
+                                <option>Gustowanie alkoholi</option>
+                                <option>Chemia ogólna</option>
+                            </optgroup>
+                            <optgroup label="Wydział Leśny">
+                                <option>Leśnictwo</option>
+                                <option>Zarządzanie terenami zielonymi</option>
+                                <option>Spekulacja cenami obszarów zielonych</option>
+                            </optgroup>
+                            <optgroup label="Wydział Rolnictwa i Ekologii">
+                                <option>Rolnictwo przemysłowe</option>
+                                <option>Produkcja żywności GMO</option>
+                                <option>Uzyskiwanie funduszy rolnych od UE</option>
+                            </optgroup>
+                            <optgroup label="Wydział Budownictwa i Inżynierii Środowiska">
+                                <option>Architektura mikrokawalerek</option>
+                                <option>Spekulacje nieruchomościami</option>
+                                <option>Flipperstwo</option>
+                                <option>Ekonomiczne planowanie przestrzenne</option>
+                            </optgroup>
+                            <optgroup label="Wydział Zastosowań Informatyki i Matematyki">
+                                <option>Informatyka stosowana</option>
+                                <option>Informatyka i ekonometria</option>
+                            </optgroup>
+                            <optgroup label="Wydział Socjologii i Pedagogiki">
+                                <option>Pedagogika pruska</option>
+                                <option>Pedagogika ruska z elementami urawniłowki</option>
+                                <option>Socjologia</option>
+                            </optgroup>
+                        </select><br>
+
+
+                        <fieldset class="radio-fieldset">
+                            <legend class="radio-legend">Rodzaj studiów</legend>
+                            <input type="radio" id="full-time-studies" name="studies-type" value="full-time-studies" required>
+                            <label for="full-time-studies">Studia dzienne</label><br>
+
+                            <input type="radio" id="part-time-studies" name="studies-type" value="part-time-studies" required>
+                            <label for="part-time-studies">Studia zaoczne</label>
+                        </fieldset>
+
+                    </fieldset>
+
+                    <input type="checkbox" id="rodo-accepted" name="rodo-accepted" value="true" required>
+                    <label for="rodo-accepted">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu przeprowadzenia procesu rekrutacji</label><br>
 
                     <input type="submit">
 
