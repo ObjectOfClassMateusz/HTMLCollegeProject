@@ -7,8 +7,7 @@
     box-sizing: border-box;
     padding: 0px 100px;
     width: min(100%, 1600px);
-    margin: auto;
-    margin-bottom: 50px;
+    margin: 0px auto 50px auto;
 }
 
 .info-content h1 {

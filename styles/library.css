@@ -77,10 +77,10 @@
 
 .library-content p {
     font-size: 1.25em;
-    margin-bottom: 10px;
+    margin: 10px 0px;
 }
 
-.library-content p::first-letter {
+.library-content .p-first-upper::first-letter {
     font-size: 2em;
 }
 
@@ -138,65 +138,33 @@
 }
 
 
-.library-content label {
+.library-content .boldlabel {
     margin: 10px 10px 10px 0px;
     font-size: 1.25em;
     font-weight: bold;
 }
 
-.library-content .searchbar {
-    padding: 10px;
-    padding-left: 40px;
-    margin: 5px;
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px #747474;
-    box-sizing: border-box;
-    font-size: 1.1em;
-    transition: linear 0.1s;
-    background-color: white;
-    background-image: url('../img/library/search.png');
-    background-position: 7px 5px;
-    background-repeat: no-repeat;
-}
-
-.library-content input[type=search]:hover {
-    box-shadow: inset 0 0 5px #c4c4c4;
-    border: 2px solid green;
-}
-
-.library-content input[type=search]:focus {
-    box-shadow: none;
-    border: 2px solid green;
-}
-
-
-.library-content input[type=submit] {
-    padding: 15px;
-    margin: 0px 10px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 20px black;
-    background-color: #008000;
-    color: white;
-    font-size: 1.1em;
-    transition: linear 0.1s;
-}
-
-.library-content input[type=submit]:hover {
-    cursor: pointer;
-    background-color: #01d301;
-}
-
-.library-content input[type=submit]:active {
-    cursor: pointer;
-    background-color: #005700;
-}
 
 .library-content::after {
     display: block;
     content: '';
     width: 100%;
     height: 50px;
+}
+
+
+.library-catalog {
+    box-sizing: border-box;
+    width: min(100%, 1600px);
+    padding: 0px 100px;
+    margin: 30px auto;
+    font-family: 'Cabin';
+}
+
+.library-catalog h1 {
+    font-size: 3em;
+    text-transform: capitalize;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 

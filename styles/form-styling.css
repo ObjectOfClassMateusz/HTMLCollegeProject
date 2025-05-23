@@ -2,7 +2,6 @@
 
 .form-page {
     font-family: 'Cabin';
-    font-size: 1.4em;
     box-sizing: border-box;
     padding: 0px 100px;
     display: flex;
@@ -11,12 +10,15 @@
 }
 
 .form-page h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-left: 50px;
 }
 
-.form-page form {
+.styled-form {
     box-sizing: border-box;
+}
+
+.irk-form {
     border-radius: 50px;
     box-shadow: 0px 0px 20px black;
     padding: 30px;
@@ -24,63 +26,65 @@
     width: min(100%, 1000px);
 }
 
-.form-page form h2 {
-    font-size: 1.5em;
+.styled-form h2 {
+    font-size: 2em;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
 
-.form-page fieldset {
+.styled-form fieldset {
     border: 2px solid green;
     border-radius: 10px;
     padding: 10px;
     margin: 10px 0px;
 }
 
-.form-page legend {
+.styled-form legend {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.4em;
 }
 
-.form-page label {
+.styled-form label {
     transition: linear 0.2s;
     color: black;
+    font-size: 1.4em;
 }
-.form-page label:hover {
+.styled-form label:hover {
     color: green;
 }
 
-.form-page input[type=text], .form-page input[type=number],
-.form-page input[type=email], .form-page input[type=tel],
-.form-page input[type=date] {
+.styled-form input[type=text], .styled-form input[type=number],
+.styled-form input[type=email], .styled-form input[type=tel],
+.styled-form input[type=date] {
     border: 2px solid beige;
     border-radius: 5px;
     box-shadow: inset 0 0 5px #438046;
     padding: 5px;
     margin: 5px;
-    font-size: 0.7em;
+    font-size: 1.1em;
     font-family: Cabin;
     transition: linear 0.2s;
 }
-.form-page input[type=text]:hover, .form-page input[type=number]:hover,
-.form-page input[type=email]:hover, .form-page input[type=tel]:hover,
-.form-page input[type=date]:hover {
+.styled-form input[type=text]:hover, .styled-form input[type=number]:hover,
+.styled-form input[type=email]:hover, .styled-form input[type=tel]:hover,
+.styled-form input[type=date]:hover {
     box-shadow: inset 0 0 5px #acb1ac;
     border: 2px solid green;
 }
-.form-page input[type=text]:focus, .form-page input[type=number]:focus,
-.form-page input[type=email]:focus, .form-page input[type=tel]:focus,
-.form-page input[type=date]:focus {
+.styled-form input[type=text]:focus, .styled-form input[type=number]:focus,
+.styled-form input[type=email]:focus, .styled-form input[type=tel]:focus,
+.styled-form input[type=date]:focus {
     box-shadow: inset 0 0 5px #b3ffb3;
     border: 2px solid green;
 }
 
 
-.form-page select {
+.styled-form select {
     padding: 7px;
     margin: 10px;
     font-family: Cabin;
-    font-size: 0.7em;
+    font-size: 1.1em;
     text-wrap: wrap;
     border: none;
     border-bottom: 3px solid #006b00;
@@ -90,46 +94,95 @@
     color: white;
     transition: linear 0.1s;
 }
-.form-page select:hover {
+.styled-form select:hover {
     background-color: #01c201;
 }
-.form-page select:focus {
+.styled-form select:focus {
     background-color: #007e00;
     border-bottom: 3px solid #004100;
 }
 
 
-.form-page .radio-fieldset {
+.styled-form .radio-fieldset {
     border: 1px solid green;
 }
 
-.form-page .radio-legend {
+.styled-form .radio-legend {
     font-weight: normal;
     text-transform: none;
 }
 
 
-.form-page input[type=submit] {
+.styled-form .button-element {
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
     margin: 15px;
     border: none;
     background-color: green;
     color: white;
     font-family: Cabin;
-    font-size: 0.7em;
+    font-size: 1.1em;
     box-shadow: 0px 0px 15px black;
     transition: linear 0.1s;
 }
 
-.form-page input[type=submit]:hover {
+.styled-form .button-element:hover {
     background-color: #00bd00;
     cursor: pointer;
 }
 
-.form-page input[type=submit]:active {
+.styled-form .button-element:active {
     background-color: #006300;
     cursor: pointer;
+}
+
+
+.styled-form .searchbar {
+    padding: 10px;
+    padding-left: 40px;
+    margin: 5px 5px 5px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #747474;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    transition: linear 0.1s;
+    background-color: white;
+    background-image: url('../img/library/search.png');
+    background-position: 7px 5px;
+    background-repeat: no-repeat;
+}
+
+.styled-form input[type=search]:hover {
+    box-shadow: inset 0 0 5px #c4c4c4;
+    border: 2px solid green;
+}
+
+.styled-form input[type=search]:focus {
+    box-shadow: none;
+    border: 2px solid green;
+}
+
+
+.styled-form .filter-expand {
+    padding: 20px 40px 20px 20px;
+    color: white;
+    background-color: green;
+    background-image: url('../img/library/expand.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    font-size: 1.2em;
+    border: none;
+    transition: linear 0.1s;
+}
+
+.styled-form .filter-expand:hover {
+    background-color: #00bd00;
+    cursor: pointer;
+}
+
+.styled-form .filter-expand:active, .styled-form .filter-expand:focus {
+    background-color: #006300;
 }
 
 
