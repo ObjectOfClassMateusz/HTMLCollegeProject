@@ -1,0 +1,18 @@
+{
+    "posts":[
+        {
+            "board-type": "Books",
+            "image-name": "Sofa.JPG",
+            "messages" : [
+                {
+                    "user-id": "(OP) 01235854" ,
+                    "text" : "What are the absolute best Calculus books?"
+                },
+                {
+                    "user-id": "83235611" ,
+                    "text" : "There are some in library. check Mr. Chuck"
+                }
+            ]
+        }
+    ]
+}

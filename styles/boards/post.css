@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    cursor: url(../../img/cursor-kopia.png) , auto;
+}
+body{
+    background-color: rgb(255, 255, 238);
+}
+.background{
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient(rgb(146, 169, 146),rgb(255, 255, 238));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.wrapper{
+    position: relative;
+}
+
+.main-content{
+    position: relative;
+    z-index: 1;
+}
+
+.boardList{
+    font-size: 12px;
+    width: 100%;
+    color: white;
+}
+
+.boardList a{
+    text-decoration: none;
+    color: white;
+}
+
+.boardList a:hover{
+    text-decoration: none;
+    color: green;
+}
+
+.main-content center {
+    margin: 30px;
+}
+
+.main-content center *{
+    display: block;
+}
+
+.title{
+    color: green;
+    margin: 10px;
+    font-size: 40px;
+}
