@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+.info-content {
+    font-family: 'Cabin';
+    font-size: 1.4em;
+    box-sizing: border-box;
+    padding: 0px 100px;
+    width: min(100%, 1600px);
+    margin: 0px auto 50px auto;
+}
+
+.info-content h1 {
+    font-size: 4em;
+    margin: 10px 10px 10px 20px;
+}
+
+.info-content p::first-letter {
+    font-size: 2em;
+}
+
+.info-content h2 {
+    font-size: 3em;
+    margin: 10px 50px;
+}
+
+.info-content hr {
+    border: 1px solid green;
+    margin: 30px 0px;
+}
+
+
+.info-content .faculty-img-right {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 32px;
+    grid-template-areas: "header image"
+                         "text-desc image";
+    grid-template-rows: min-content 1fr;
+}
+
+.info-content .faculty-img-left {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    justify-items: center;
+    gap: 32px;
+    grid-template-areas: "image header"
+                         "image text-desc";
+    grid-template-rows: min-content 1fr;
+}
+
+.info-content .faculty-img-left img, .info-content .faculty-img-right img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+    grid-area: image;
+}
+
+.info-content .faculty-description {
+    grid-area: text-desc;
+}
+
+.info-content .header-right {
+    text-align: right;
+    justify-self: end;
+    grid-area: header;
+}
+
+.info-content .header-left {
+    text-align: left;
+    justify-self: start;
+    grid-area: header;
+}
+
+@media screen and (max-width: 800px)
+{
+    .info-content .header-left, .info-content .header-right {
+        font-size: 3em;
+    }
+
+    .info-content {
+        font-size: 1.2em;
+        padding: 0px 10px;
+    }
+
+    .info-content .faculty-img-right {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "image" "text-desc";
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .info-content .faculty-img-left {
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "image" "text-desc";
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .info-content h2 {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px)
+{
+    .info-content .header-left, .info-content .header-right {
+        font-size: 2em;
+    }
+
+    .info-content .faculty-img-right {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-content .faculty-img-left {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.info-content ul {
+    margin-left: 1em;
+    margin-top: 10px;
+}
+
+.info-content .registration-offer {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.info-content .registration-offer::first-letter {
+    font-size: 1em;
+}
+
+

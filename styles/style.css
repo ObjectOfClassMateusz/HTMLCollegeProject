@@ -6,7 +6,11 @@
 
 @import url(./footer.css);
 
+@import url(./info-content.css);
+
 @import url(./library.css);
+
+@import url(./form-styling.css);
 
 
 *{
