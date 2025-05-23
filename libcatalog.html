@@ -49,18 +49,54 @@
             </sidepanel>
             
 
-            <div class="library-catalog">
+            
+
+            <div class="library-navbar">
                 <h1>Katalog biblioteczny</h1>
 
-                <form class="styled-form" method="post" action="https://httpbin.org/post">
-                    <label for="searchbar">Tytuł do wyszukania:</label>
+                <form class="styled-form library-navbar-form" method="post" action="https://httpbin.org/post">
+                    <label for="searchbar" class="library-navbar-label">Tytuł do wyszukania:</label>
+
                     <input type="search" id="searchphrase" name="searchphrase" class="searchbar" placeholder="Wpisz frazę">
-                    <input type="button" value="Filtry" class="filter-expand">
-                    <input type="submit" value="Filtruj" class="button-element">
-                    <input type="button" value="Wyczyść filtry" id="clearbutton" class="button-element">
+
+                    <div>
+                        <div class="dropdown">
+                            <input type="button" value="Sortowanie" class="dropdown-button">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li>Alfabetyczne</li>
+                                    <li>Po liczbie egzemplarzy: rosnąco</li>
+                                    <li>Po liczbie egzemplarzy: malejąco</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <input type="button" value="Kategorie" class="dropdown-button">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li>Leśnictwo</li>
+                                    <li>Informatyka</li>
+                                    <li>Matematyka</li>
+                                    <li>Architektura</li>
+                                    <li>Ekonomia</li>
+                                    <li>Filozofia</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Szukaj" class="button-element">
+                        <input type="button" value="Wyczyść filtry" id="clearbutton" class="button-element">
+                    </div>
                 </form>
+
             </div>
 
+            <div class="library-catalog">
+                Lorem ipsum.
+            </div>
 
         </section>
         <footer class="footer">
