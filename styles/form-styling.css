@@ -224,6 +224,91 @@
 }
 
 
+.uwu-checkbox {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.uwu-checkbox input {
+    position: relative;
+    z-index: 1;
+    appearance: none;
+}
+
+.uwu-checkbox span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe0000;
+    border-radius: 30px;
+    transition: ease 0.5s;
+    box-shadow: 0 6px 9px #fe000066;
+}
+
+.uwu-checkbox span i {
+    position: absolute;
+    background: #fff;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: ease 0.5s;
+}
+
+.uwu-checkbox span i::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    background: #fe0000;
+    border-radius: 50%;
+    box-shadow: 13px 0 0 #fe0000;
+    transition: ease 0.5s;
+}
+
+.uwu-checkbox span i::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: calc(50% - 6px);
+    width: 12px;
+    height: 2px;
+    background: #fe0000;
+    border-radius: 3px;
+    transition: ease 0.5s;
+}
+
+.uwu-checkbox input:checked ~ span {
+    background: #05be05;
+    box-shadow: 0 6px 9px #05be05;
+}
+
+.uwu-checkbox input:checked ~ span i {
+    left: 32px;
+}
+
+.uwu-checkbox input:checked ~ span i::before {
+    background: #05be05;
+    box-shadow: 13px 0 0 #05be05;
+}
+
+.uwu-checkbox input:checked ~ span i::after {
+    border-radius: 0;
+    height: 6px;
+    bottom: 5px;
+    border-radius: 0 0 6px 6px;
+    background: #05be05;
+}
+
+
 
 @media screen and (max-width: 800px) {
     .form-page {
