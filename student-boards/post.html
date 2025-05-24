@@ -13,6 +13,7 @@
         {
             const threadCategory = document.getElementById("threadCategory");
             const title = document.getElementById("title");
+            const body = document.getElementById('body');
             switch(postNumber)
             {
                 case "1":
@@ -34,6 +35,9 @@
                 case "5":
                     threadCategory.src = "../img/threads/title/lec.jpg";
                     title.innerHTML = "/lm/ Lectures";
+                    const woda = document.createElement('script');
+                    woda.src = 'woda.js';
+                    body.appendChild(woda);
                     
                     break;
                 case "6":
@@ -43,7 +47,6 @@
                 default:
                     threadCategory.display = "none";
                     title.innerHTML = "";
-                    const body = document.getElementById('body');
                     body.innerHTML = "404";
                     break;
             }
@@ -83,19 +86,20 @@
                 postDiv.innerHTML = "Błąd ładowania posta.";
             }
         };
-
-        const getPostImage = () => 
-        {
-            //const
-        };
         
 
+        const addMessage = async () => 
+        {
+            var xhr = new XMLHttpRequest();
+            console.log(xhr);
+        };
+        
     </script>
 </head>
 <body onload="setThreadCategoryImage(); loadPostDetails()" id="body">
     
-    <div class="wrapper">
-        <div class="main-content">
+    <div class="wrapper" id>
+        <bodyy class="main-content">
             <p class="boardList">
                 <!---->
                 [
@@ -158,14 +162,16 @@
             </center>
             <hr/>
             <div class="smallDetails">
-                <button>[Post a Reply]</button>
+                <button onclick="addMessage();">[Post a Reply]</button>
                 <hr/>
             </div>
             <hr style="width: 100%;"/>
             <div id="postDetails">
                 
             </div>
-        </div>
+        </bodyy>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.js" integrity="sha512-wrQIZRuIVRafoAsp5i2HIXa+3oF+lQqx4eOMAdw+vt7npivM7+D4OMIZPhlkdbV18VxZLkn2QaOii6cr8c1+dA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <div class="background">
             <!--background-->
         </div>

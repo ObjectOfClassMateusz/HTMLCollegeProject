@@ -6,7 +6,11 @@
 }
 body{
     background-color: rgb(255, 255, 238);
+    width:100%;
+	min-height:100vh;
 }
+
+
 .background{
     width: 100vw;
     height: 50vh;
@@ -23,6 +27,8 @@ body{
 .main-content{
     position: relative;
     z-index: 1;
+    width: 100%;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -116,15 +122,38 @@ body{
     margin: 20px;
 }
 
+.postOP{
+    width: 800px;
+}
+
+@media screen and (max-width: 825px) {
+    .postReply{
+        width: 90%;
+    }#postDetails img{
+        width: 60%;
+        margin-left: 0;
+    }
+    .postOP{
+        width: 90%;
+    }
+
+    
+}
+
 .text{
     background-color: rgb(132, 234, 213);
     margin: 10px;
     padding: 15px;
+    clear: both;
+    display: flex;
+    flex-direction: column;
 }
 
-.postOP{
-    width: 800px;
+.text img{
+    display: block;
 }
+
+
 
 
 
