@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     
-    cursor: url(../../img/cursor-kopia.png) , auto;
+    /*cursor: url(../../img/cursor-kopia.png) , auto;*/
 }
 body{
     background-color: rgb(255, 255, 238);
@@ -23,6 +23,10 @@ body{
 .main-content{
     position: relative;
     z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .boardList{
@@ -49,8 +53,97 @@ body{
     display: block;
 }
 
-.title{
+.main-content hr {
+    width: 80%;
+}
+
+#title{
     color: green;
     margin: 10px;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+#threadCategory{
+    width: 200px;
+    border: rgb(0, 50, 40) 1px solid;
+}
+
+.smallDetails{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    width: 40%;
+}
+
+.smallDetails button{
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: rgb(0, 50, 40);
+}
+
+.smallDetails button:hover{
+    cursor: pointer;
+    color:green
+    
+}
+
+#postDetails{
+    margin: 10px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#postDetails img{
+    width: 400px;
+    display: block;
+    margin-left: 30px;
+    float: left;
+    
+}
+
+#postDetails b{
+    color: green;
+}
+
+.postReply{
+    clear: both;
+    width: 500px;
+    margin: 20px;
+}
+
+.text{
+    background-color: rgb(132, 234, 213);
+    margin: 10px;
+    padding: 15px;
+}
+
+.postOP{
+    width: 800px;
+}
+
+
+
+
+.postReply b::before{
+    padding: 5px;
+    content: ">>";
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+}
+
+.thread-image{
+    margin-bottom: 15px;
+    border: 1px solid rgb(0, 50, 40);
+    margin: 20px;
+}
+
+.postReply i{
+    text-decoration: underline;
+    color:green;
 }

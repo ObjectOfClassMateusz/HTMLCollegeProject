@@ -1,0 +1,75 @@
+annoybackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    display: none; /* Initially hidden */
+}
+
+
+sellyoursoul{
+    border: 10px ridge rgb(0, 50, 40);
+    background-color: green;
+    width: 400px;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 10px;
+    padding: 20px;
+    animation: skeletonShowsUp 1s ease-in;
+
+    font-size: 10px;
+}
+
+sellyoursoul img{
+    width: 200px;
+    box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.816);
+}
+
+sellyoursoul button{
+    background-color: white;
+    padding: 2px;
+    color: green;
+}
+
+
+@media screen and (max-width: 771px) {
+    sellyoursoul {
+        width: 42vw;
+        font-size: 1.5vw;
+    }
+    sellyoursoul img{
+    width: 25vw;
+    box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.816);
+    }
+}
+    
+
+
+@keyframes skeletonShowsUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+

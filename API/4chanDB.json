@@ -1,7 +1,7 @@
 {
     "posts":[
         {
-            "board-type": "Books",
+            "id":"1",
             "image-name": "Sofa.JPG",
             "messages" : [
                 {
@@ -10,7 +10,93 @@
                 },
                 {
                     "user-id": "83235611" ,
-                    "text" : "There are some in library. check Mr. Chuck"
+                    "text" : "You 'll find one in our Library. Check Mr. Chuck - ~What's these Sn4kes? , pretty easy to read and understand."
+                },
+                {
+                    "user-id": "90768123" ,
+                    "text" : "<i> >> 83235611</i><br/> Have you lost your mind? That book is a joke. It is not even a calculus book. It is a book about snakes.<br/>"
+                }
+            ]
+        },
+        {
+            "id":"2",
+            "image-name": "egzamin.jpg",
+            "messages" : [
+                {
+                    "user-id": "(OP) 98235454" ,
+                    "text" : "Does anyone have previous exams from EDI?"
+                },
+                {
+                    "user-id": "06055619" ,
+                    "text" : "Sad Pepe frog"
+                }
+            ]
+        },
+        {
+            "id":"3",
+            "image-name": "kebab.jpg",
+            "messages" : [
+                {
+                    "user-id": "(OP) 06055619" ,
+                    "text" : "I came here to recomend the greatest sandwiches bar near our campus. Street Wilczańskiego 12 , Ursynów. Its called Breadfull , thave have sandwiches from all over the world kitchen"
+                },
+                {
+                    "user-id": "23123456" ,
+                    "text" : "lol, just go to subway"
+                },
+                {
+                    "user-id": "0645319" ,
+                    "text" : "<i> >> 23123456</i><br/>  have fun for paying 20zł for mid meal."
+                },
+                {
+                    "user-id": "6352141" ,
+                    "text" : "lmao , every pub is mid. I prefer to buy ingredients and make my own sandwiches at home. It's cheaper"
+                }
+            ]
+        },
+        {
+            "id":"4",
+            "image-name": "praktyki.jpg",
+            "messages" : [
+                {
+                    "user-id": "(OP) 32535400" ,
+                    "text" : "I have finished the master degree of sociology and I'm looking for a job. Can't find anything in Warsaw , once I saw one offer from Białystystok but disapeared last night. Does anyone know any offers for sociologists?"
+                },
+                {
+                    "user-id": "06055663" ,
+                    "text" : "Try find on internet <a href='https://www.olx.pl/praca/q-praca-socjologia/' target='_blank'>https://www.olx.pl/praca/q-praca-socjologia/</a>"
+                }
+            ]
+        }
+        ,{
+            "id":"5",
+            "image-name": "woda.jpg",
+            "messages" : [
+                {
+                    "user-id": "(OP) 1192234" ,
+                    "text" : "<b>/torrents/</b> I would like to share with you some mp4 lectures to educate you guys for exams. Water Faculties became harder beacause of this new professor that grades us so hard. He doesnt send hes materials to us , so I had to make torrents to make it easier to pass. Idk Grab some <a href='a.pm/87t6uf456udbry546' target='_blank'>a.pm/87t6uf456udbry546</a> , <a href='mega.nz/water/y65fuyiy566y' target='_blank'>mega.nz/water/y65fuyiy566y</a> , <a href='magnet::nz=&654ruyuiy76tr54ydtrfyu76' target='_blank'>magnet::nz=&654ruyuiy76tr54ydtrfyu76</a>"
+                },
+                {
+                    "user-id": "0656435" ,
+                    "text" : "my man , you are mine salvation. I was so scared of this exam , but now I can finally study. Thank you so much"
+                },
+                {
+                    "user-id": "4634625" ,
+                    "text" : "Billions must watch"
+                }
+            ]
+        },
+        {
+            "id":"6",
+            "image-name": "pierwszaki.jpg",
+            "messages" : [
+                {
+                    "user-id": "(OP) 98235454" ,
+                    "text" : "Does anyone have previous exams from EDI?"
+                },
+                {
+                    "user-id": "06055619" ,
+                    "text" : "Sad Pepe frog"
                 }
             ]
         }

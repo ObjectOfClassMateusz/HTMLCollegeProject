@@ -12,6 +12,8 @@
 
 @import url(./form-styling.css);
 
+@import url(./cookies.css);
+
 
 *{
     margin: 0;

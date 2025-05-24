@@ -7,8 +7,46 @@
     <title>Szkoła Dziwnych Działań w Warszawie</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <script src="./scripts/header.js"></script>
+    <script>
+        //localStorage.clear();
+
+        function checkCookie() {
+            const annoybackground = document.getElementById("annoyBackgroundId");
+            const sellYourSoul = document.getElementById("sellYourSoulId");
+            if(localStorage.getItem('cookieConsent'))
+            {
+                annoybackground.style.display = "none";
+            }
+            else{
+                annoybackground.style.display = "flex";
+            }
+        }
+
+
+        const setCookie = (name, value, days,userID) => {
+            const annoybackground = document.getElementById("annoyBackgroundId");
+            const sellYourSoul = document.getElementById("sellYourSoulId");
+
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            localStorage.setItem(name, userID);
+            annoybackground.style.display = "none";
+        };
+
+        function logCookie() 
+        {
+            console.log(localStorage.getItem('cookieConsent'));
+        };
+
+    
+    </script>
 </head>
-<body>
+<body onload="checkCookie()">
     <main class="main">
         <section class="main-content">
             <header>
@@ -54,7 +92,7 @@
                         Lorem Impsum
                     </li>
                     <li>
-                        <a href="./student-boards.html">
+                        <a href="./student-boards/student-boards.html">
                             Boardy Studenckie
                         </a>
                     </li>
@@ -151,18 +189,20 @@
                 </div>
                 <div class="events-container">
                     <div class="event-block">
-                        <img src="./img/event1.jpg" alt="Event 1" class="event-image">
-                        <p class="event-text">Wydarzenie 1: Opis wydarzenia w kilku zdaniach.</p>
+                        <img src="./img/events/images2.jpg" alt="Event 1" class="event-image">
+                        <p class="event-text">Ogłoszone są godziny rektorskie od 27-28.05.2025. </p>
                         <a href="#" class="event-link">Dowiedz się więcej</a>
                     </div>
                     <div class="event-block">
-                        <img src="./img/event2.jpg" alt="Event 2" class="event-image">
-                        <p class="event-text">Wydarzenie 2: Opis wydarzenia w kilku zdaniach.</p>
+                        <img src="./img/events/images.jpg" alt="Event 2" class="event-image">
+                        <p class="event-text"><b>UWAGA!</b> Remontowana jest sala WTC9/11. Doszło do kruszenia się drugiej ściany ...</p>
                         <a href="#" class="event-link">Dowiedz się więcej</a>
                     </div>
                     <div class="event-block">
-                        <img src="./img/event3.jpg" alt="Event 3" class="event-image">
-                        <p class="event-text">Wydarzenie 3: Opis wydarzenia w kilku zdaniach.</p>
+                        <video loop="true" autoplay="autoplay" muted class="event-image">
+                            <source src="./img/videos/12432621_1920_1080_30fps.mp4" type="video/mp4">
+                        </video>
+                        <p class="event-text">Studenci opantetowali sterowanie ludzkimi nerwami Transformatą Fouriera. Nadchodzi era CyberPunkowa !?</p>
                         <a href="#" class="event-link">Dowiedz się więcej</a>
                     </div>
                 </div>
@@ -177,7 +217,13 @@
                     <ul class="footer-links">
                         <li><a href="#">Polityka prywatności</a></li>
                         <li><a href="#">Regulamin</a></li>
-                        <li><a href="#">Cookies</a></li>
+                        <li><a onclick="logCookie();">Cookies</a></li>
+                        <script>
+                            if(localStorage.getItem('cookieConsent'))
+                            {
+                                document.write(localStorage.getItem('cookieConsent'));
+                            }
+                        </script>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -190,7 +236,24 @@
                 </div>
             </div>
         </footer>
-
     </main>
+    
+    <annoybackground id="annoyBackgroundId">
+        <sellyoursoul id="sellYourSoulId">
+            <p>
+                <h2>Zezwolić na użycie plików cookie w tej przeglądarce?</h2>
+                Używamy plików cookie i podobnych technologii, by pomagać w dostarczaniu i 
+                ulepszaniu zawartości SDDW. Wykorzystujemy je do zachęcania odwiedzających do
+                zapisania się na bestsellery oraz do podjęcia się studiów.
+            </p>
+            <img src="./img/8-97lL6eXtWSgJ58N.png" alt="">
+            <button onclick="setCookie('cookieConsent', 'true', 365,'9875785');">
+                Zaprzedaj swoją duszę na tej stronie
+            </button>
+            <button onclick="setCookie('cookieConsent','true',0,null)">
+                Odmów plików Cookie
+            </button>
+        </sellyoursoul>
+    </annoybackground>
 </body>
 </html>

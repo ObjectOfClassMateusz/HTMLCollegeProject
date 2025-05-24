@@ -5,8 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/boards/post.css">
+    <script>
+        //
+        const getParams = new URLSearchParams(window.location.search);
+        const postNumber = getParams.get('p');
+        const setThreadCategoryImage = () => 
+        {
+            const threadCategory = document.getElementById("threadCategory");
+            const title = document.getElementById("title");
+            switch(postNumber)
+            {
+                case "1":
+                    threadCategory.src = "../img/threads/title/Books.jpg";
+                    title.innerHTML = "/b/ Books";
+                    break;
+                case "2":
+                    threadCategory.src = "../img/threads/title/egzamin.jpg";
+                    title.innerHTML = "/td/ Exams";
+                    break;
+                case "3":
+                    threadCategory.src = "../img/threads/title/food.jpg";
+                    title.innerHTML = "/fr/ Food/Canteen";
+                    break;
+                case "4":
+                    threadCategory.src = "../img/threads/title/praca_praca.JPG";
+                    title.innerHTML = "/wat/ Work/Practices";
+                    break;
+                case "5":
+                    threadCategory.src = "../img/threads/title/lec.jpg";
+                    title.innerHTML = "/lm/ Lectures";
+                    
+                    break;
+                case "6":
+                    threadCategory.src = "../img/threads/title/pierwszaki.jpg";
+                    title.innerHTML = "/fdd/ First graders";
+                    break;
+                default:
+                    threadCategory.display = "none";
+                    title.innerHTML = "";
+                    const body = document.getElementById('body');
+                    body.innerHTML = "404";
+                    break;
+            }
+        };
+
+
+     
+        const loadPostDetails = async () => {
+            const postDiv = document.getElementById("postDetails");
+            try {
+                const response = await fetch("http://localhost:3000/posts/" + postNumber);
+                if (!response.ok) throw new Error("Network response was not ok");
+                const postDetails = await response.json();
+                console.log("Post details: ", postDetails);
+
+                postDiv.innerHTML = "<div >File "+`<a href=# style="color:green;">`+postDetails["image-name"]+`</a></div>`;
+                const postImage = document.createElement("img");
+                postImage.src = "../img/threads/"+postDetails["image-name"];
+                postImage.className = "thread-image";
+                postImage.alt = "Post image";
+
+                const postOP = document.createElement("div");
+                postOP.className = "postOP";
+                postOP.innerHTML = "<b>"+postDetails.messages[0]["user-id"] + "</b><br/> " + postDetails.messages[0].text;
+
+                const postReplies = document.createElement("div");
+                postReplies.className = "postReply";
+                postReplies.innerHTML = postDetails.messages.slice(1).map(msg => {
+                    return "<div class='text'><b>Anonymous " + msg["user-id"] + "</b><br/> " + msg.text+'</div>';
+                }).join("");
+
+                postDiv.appendChild(postImage);
+                postDiv.appendChild(postOP);
+                postDiv.appendChild(postReplies);   
+            } catch (e) {
+                console.error("Error fetching post details:", e);
+                postDiv.innerHTML = "Błąd ładowania posta.";
+            }
+        };
+
+        const getPostImage = () => 
+        {
+            //const
+        };
+        
+
+    </script>
 </head>
-<body>
+<body onload="setThreadCategoryImage(); loadPostDetails()" id="body">
+    
     <div class="wrapper">
         <div class="main-content">
             <p class="boardList">
@@ -63,13 +150,21 @@
                 [<a href="#">Edit</a>]
                 [<a href="#">Searching</a>]
                 [<a href="#">Mobile</a>]
-                [<a href="#">Home</a>]
+                [<a href="student-boards.html">Home</a>]
             </p>
             <center>
-                <img src="../img/threads/Books.jpg" alt="" srcset="">
-                <b class="title">/b/ Books</b>
+                <img id="threadCategory" alt="category_image_error"/>
+                <b id="title">/b/ Books</b>
             </center>
             <hr/>
+            <div class="smallDetails">
+                <button>[Post a Reply]</button>
+                <hr/>
+            </div>
+            <hr style="width: 100%;"/>
+            <div id="postDetails">
+                
+            </div>
         </div>
         <div class="background">
             <!--background-->

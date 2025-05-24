@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     
-    cursor: url(../../img/cursor-kopia.png) , auto;
+    
 }
 body{
     background-color: rgb(255, 255, 238);
@@ -96,6 +96,11 @@ a.logo img {
 .thread-element{
     flex: 1;
     margin: 8px;
+    text-decoration: none;
+}
+
+.thread-element:hover{
+cursor: url(../../img/cursor-kopia.png) , auto;
 }
 
 .thread-element img {
@@ -104,15 +109,22 @@ a.logo img {
 }
 
 .thread-element p{
-    width: 40%;
+    width: 90%;
+    text-align: center;
 }
 
 .thread-element p , .thread-element b{
     color: rgb(0, 50, 40);
 }
 
-b{
-    text-decoration: underline;
+b{text-decoration: underline;}
+
+.thread-element b{
+    
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    margin: 5px;
 }
 
 li{

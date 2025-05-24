@@ -15,6 +15,7 @@
     "http-status-emojis": "^2.2.0",
     "inflection": "^3.0.2",
     "ipaddr.js": "^2.2.0",
+    "js-cookie": "^3.0.5",
     "json-server": "^1.0.0-beta.3",
     "json5": "^2.2.3",
     "lowdb": "^7.0.1",
@@ -30,10 +31,9 @@
     "totalist": "^3.0.1",
     "type-fest": "^4.41.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "odpalaj-opla" : "json-server --watch API/4chanDB.json"
+    "odpalaj-opla": "json-server --watch API/4chanDB.json"
   },
   "keywords": [],
   "author": "",
