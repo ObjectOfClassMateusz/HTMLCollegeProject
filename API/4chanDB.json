@@ -14,5 +14,12 @@
                 }
             ]
         }
+    ],
+
+    "library-books": [
+        {
+            "title": "Polska naszych marzeń",
+            "author": "Jarosław Kaczyński"
+        }
     ]
 }

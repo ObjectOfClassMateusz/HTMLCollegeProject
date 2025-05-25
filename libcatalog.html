@@ -64,7 +64,8 @@
                             <input type="button" value="Sortowanie" class="dropdown-button">
                             <div class="dropdown-content">
                                 <ul>
-                                    <li><label><input type="radio" id="alphabetical" name="sorting" value="alphabetical"><span>Alfabetyczne</span></label></li>
+                                    <li><label><input type="radio" id="alphabetical-title" name="sorting" value="alphabetical-title" checked><span>Alfabetyczne po tytule</span></label></li>
+                                    <li><label><input type="radio" id="alphabetical-author" name="sorting" value="alphabetical-author"><span>Alfabetyczne po autorze</span></label></li>
                                     <li><label><input type="radio" id="count-ascending" name="sorting" value="count-ascending"><span>Po liczbie egzemplarzy: rosnąco</span></label></li>
                                     <li><label><input type="radio" id="count-descending" name="sorting" value="count-descending"><span>Po liczbie egzemplarzy: malejąco</span></label></li>
                                 </ul>
@@ -75,12 +76,12 @@
                             <input type="button" value="Kategorie" class="dropdown-button">
                             <div class="dropdown-content">
                                 <ul>
-                                    <li><label><input type="checkbox" name="forests" id="forests" value="true"><span>Leśnictwo</span></label></li>
-                                    <li><label><input type="checkbox" name="informatics" id="informatics" value="true"><span>Informatyka</span></label></li>
-                                    <li><label><input type="checkbox" name="maths" id="maths" value="true"><span>Matematyka</span></label></li>
-                                    <li><label><input type="checkbox" name="architecture" id="architecture" value="true"><span>Architektura</span></label></li>
-                                    <li><label><input type="checkbox" name="economy" id="economy" value="true"><span>Ekonomia</span></label></li>
-                                    <li><label><input type="checkbox" name="philosophy" id="philosophy" value="true"><span>Filozofia</span></label></li>
+                                    <li><label><input type="checkbox" name="forests" id="forests" value="true" checked><span>Leśnictwo</span></label></li>
+                                    <li><label><input type="checkbox" name="informatics" id="informatics" value="true" checked><span>Informatyka</span></label></li>
+                                    <li><label><input type="checkbox" name="maths" id="maths" value="true" checked><span>Matematyka</span></label></li>
+                                    <li><label><input type="checkbox" name="architecture" id="architecture" value="true" checked><span>Architektura</span></label></li>
+                                    <li><label><input type="checkbox" name="economy" id="economy" value="true" checked><span>Ekonomia</span></label></li>
+                                    <li><label><input type="checkbox" name="philosophy" id="philosophy" value="true" checked><span>Filozofia</span></label></li>
                                 </ul>
                             </div>
                         </div>
@@ -95,7 +96,8 @@
             </div>
 
             <div class="library-catalog">
-                Lorem ipsum.
+                Kategorie: <span id="categories-output"></span><br>
+                Sortowanie: <span id="sorting-output"></span>
             </div>
 
         </section>
