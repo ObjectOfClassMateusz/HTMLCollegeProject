@@ -177,14 +177,9 @@
 }
 
 .styled-form .dropdown-button:hover {
-    background-color: #00bd00;
+    background-color: #006300;
     cursor: pointer;
 }
-
-.styled-form .dropdown-button:active, .styled-form .dropdown-button:focus {
-    background-color: #006300;
-}
-
 
 
 .dropdown {
@@ -200,28 +195,68 @@
     z-index: 10;
 }
 
-.dropdown-button:focus + .dropdown-content {
+.dropdown-button:hover + .dropdown-content {
+    display: block;
+}
+
+.dropdown-content:hover {
     display: block;
 }
 
 .dropdown-content ul {
     list-style: none;
+    width: max-content;
 }
 
 .dropdown-content ul li {
-    padding: 10px 20px;
-    display: block;
+    display: flex;
+    flex-direction: row;
     box-sizing: border-box;
     cursor: pointer;
     user-select: none;
     background-color: green;
-    color: white;
     transition: linear 0.1s;
+    width: 100%;
 }
 
 .dropdown-content ul li:hover {
     background-color: #006300;
 }
+
+.dropdown-content ul li > label {
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 100%;
+}
+.dropdown-content ul li > label:hover {
+    color: #c4c4c4;
+}
+.dropdown-content ul li > label > span {
+    margin-left: 10px;
+}
+
+.dropdown-content input[type=radio], .dropdown-content input[type=checkbox] {
+    position: relative;
+    appearance: none;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+}
+
+.dropdown-content input[type=radio]::before, .dropdown-content input[type=checkbox]::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+}
+.dropdown-content input[type=radio]:checked::before, .dropdown-content input[type=checkbox]:checked::before {
+    background-image: url(../img/checkmark.png);
+    background-size: contain;
+}
+
 
 
 .uwu-checkbox {
