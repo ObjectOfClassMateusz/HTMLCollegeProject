@@ -160,6 +160,26 @@
     width: min(100%, 1400px);
     padding: 0px 100px;
     margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.library-catalog hr {
+    box-sizing: border-box;
+    margin: 30px 0px;
+    border: none;
+    border-bottom: 4px solid green;
+    border-radius: 2px;
+}
+
+#library-books-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#library-books-list .book-title {
+    font-style: italic;
+    font-size: 2em;
 }
 
 
