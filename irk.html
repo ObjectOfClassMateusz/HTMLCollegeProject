@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Biblioteka | Szkoła Dziwnych Działań w Warszawie</title>
+    <title>IRK | Szkoła Dziwnych Działań w Warszawie</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/irk.js" defer></script>
 </head>
 <body>
     <main class="main">
@@ -51,7 +52,7 @@
 
                 <h1>Internetowa Rejestracja Kandydatów</h1>
 
-                <form class="styled-form irk-form" method="post" action="https://httpbin.org/post">
+                <form class="styled-form irk-form" id="irk-form">
                     <h2>Rejestracja na semestr zimowy 2025/2026</h2>
                     
                     <fieldset>
@@ -147,7 +148,7 @@
                             </optgroup>
                             <optgroup label="Wydział Socjologii i Pedagogiki">
                                 <option>Pedagogika pruska</option>
-                                <option>Pedagogika ruska z elementami urawniłowki</option>
+                                <option>Pedagogika ruska</option>
                                 <option>Socjologia</option>
                             </optgroup>
                         </select><br>
@@ -173,7 +174,10 @@
                     <input type="submit" class="button-element">
 
                 </form>
+            </div>
 
+            <div class="info-content">
+                <p class="submitted-link-desc">Przejrzyj listę <a href="irk-submissions.html">przesłanych zgłoszeń.</a></p>
             </div>
 
         </section>
