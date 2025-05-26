@@ -152,6 +152,10 @@
     height: 50px;
 }
 
+.library-content em {
+    font-weight: bold;
+}
+
 
 .library-catalog {
     font-family: 'Cabin';
