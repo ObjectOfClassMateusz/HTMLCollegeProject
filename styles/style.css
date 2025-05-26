@@ -12,6 +12,8 @@
 
 @import url(./form-styling.css);
 
+@import url(./styled-table.css);
+
 
 *{
     margin: 0;
