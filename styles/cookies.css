@@ -19,7 +19,7 @@ sellyoursoul{
     border: 10px ridge rgb(0, 50, 40);
     background-color: green;
     width: 400px;
-    min-height: 70vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@ sellyoursoul{
     padding: 20px;
     animation: skeletonShowsUp 1s ease-in;
 
-    font-size: 10px;
+    font-size: 20px;
 }
 
 sellyoursoul img{
@@ -47,7 +47,7 @@ sellyoursoul button{
 @media screen and (max-width: 771px) {
     sellyoursoul {
         width: 42vw;
-        font-size: 1.5vw;
+        font-size: 1.7vw;
     }
     sellyoursoul img{
     width: 25vw;
@@ -55,8 +55,6 @@ sellyoursoul button{
     }
 }
     
-
-
 @keyframes skeletonShowsUp {
     from {
         transform: scale(0);

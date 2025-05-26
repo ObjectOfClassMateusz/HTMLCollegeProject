@@ -35,6 +35,21 @@ sidepanel ul{
     margin-left: 10px;
     margin-top: 20px;
 }
+sidepanel ul li{
+    list-style: armenian;
+}
+sidepanel ul li a{
+    color: green;
+    text-decoration: none;
+}
+
+sidepanel p{
+    margin-left: 5px;
+}
+
+sidepanel h2{
+    margin: 10px;
+}
 
 sidepanel button{
     padding: 13px;

@@ -103,3 +103,30 @@ ititled.center-title
     gap: 6px;
 }
 
+bosscontainer{
+    border: green 10px ridge;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+.boss {
+    border: rgb(0, 50, 40) ridge 5px;
+    width: 230px;
+    min-height: auto;
+}
+
+.boss p{
+    color: white;
+    text-align: center;
+    background-color: #000;
+}
+
+.boss img{
+    width: 100%;
+}
+
+
+
