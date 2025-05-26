@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Lista zgłoszeń IRK | Szkoła Dziwnych Działań w Warszawie</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/irk-submissions.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <section class="main-content">
+            <header>
+                <a href="./index.html">
+                    <div class="roundButton">
+                        <img src="./img/logo.png" alt="NoImg">
+                    </div>
+                </a>
+                <h1>Szkoła Dziwnych Działań w Warszawie</h1>
+                <div class="queue">
+                    <div class="roundButton centering" onclick="backNavShowsUp();">
+                        SDDW
+                    </div>
+                    <div class="roundButton centering">
+                        PL/EN
+                    </div>
+                </div>
+                <header>
+                    <ul>
+                        <li><a href="./index.html">Uczelnia</a></li>
+                        <li><a href="#">Studenci</a></li>
+                        <li><a href="./campus.html">Kampus</a></li>
+                        <li><a href="#">Nauka</a></li>
+                        <li><a href="./contact.html">Kontakt</a></li>
+                        <li><a href="./irk.html">IRK</a></li>
+                        <li><a href="#">Sylabus</a></li>
+                        <li><a href="#">Kadra</a></li>
+                        <li><a href="./faculties.html">Wydziały</a></li>
+                        <li><a href="./library.html">Biblioteka</a></li>
+                    </ul>
+                </header>
+            </header>
+            <sidepanel class="backNav" id="backNavId">
+                <button class="backNavButton" id="backNavButtId" onclick="backNavShowsUp();">
+                    back up buddy
+                </button>
+            </sidepanel>
+                
+            <div class="info-content">
+
+                <h1>Przesłane zgłoszenia</h1>
+
+                Pełne dane zgłoszeń nie są pokazywane ze względu na RODO.
+
+                <hr>
+
+                <div id="irk-submission-list">
+
+                </div>
+
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p>&copy; 2025 Szkoła Dziwnych Działań w Warszawie</p>
+                </div>
+                <div class="footer-section">
+                    <ul class="footer-links">
+                        <li><a href="#">Polityka prywatności</a></li>
+                        <li><a href="#">Regulamin</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <p><b>Linki</b></p>
+                    <ul class="-links">
+                        <li><a href="#">Projekty</a></li>
+                        <li><a href="#">Współpraca</a></li>
+                        <li><a href="#">Dla Mediów</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

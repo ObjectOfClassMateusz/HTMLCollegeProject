@@ -13,6 +13,7 @@
 @import url(./form-styling.css);
 
 @import url(./cookies.css);
+@import url(./styled-table.css);
 
 
 *{
@@ -111,6 +112,8 @@ bosscontainer{
     gap: 20px;
     align-items: center;
 }
+
+
 
 .boss {
     border: rgb(0, 50, 40) ridge 5px;

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Biblioteka | Szkoła Dziwnych Działań w Warszawie</title>
+    <title>IRK | Szkoła Dziwnych Działań w Warszawie</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/irk.js" defer></script>
 </head>
 <body>
     <main class="main">
@@ -30,9 +31,9 @@
                     <ul>
                         <li><a href="./index.html">Uczelnia</a></li>
                         <li><a href="#">Studenci</a></li>
-                        <li><a href="#">Kampus</a></li>
+                        <li><a href="./campus.html">Kampus</a></li>
                         <li><a href="#">Nauka</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="./contact.html">Kontakt</a></li>
                         <li><a href="#">IRK</a></li>
                         <li><a href="#">Sylabus</a></li>
                         <li><a href="#">Kadra</a></li>
@@ -51,7 +52,7 @@
 
                 <h1>Internetowa Rejestracja Kandydatów</h1>
 
-                <form class="styled-form irk-form" method="post" action="https://httpbin.org/post">
+                <form class="styled-form irk-form" id="irk-form">
                     <h2>Rejestracja na semestr zimowy 2025/2026</h2>
                     
                     <fieldset>
@@ -147,7 +148,7 @@
                             </optgroup>
                             <optgroup label="Wydział Socjologii i Pedagogiki">
                                 <option>Pedagogika pruska</option>
-                                <option>Pedagogika ruska z elementami urawniłowki</option>
+                                <option>Pedagogika ruska</option>
                                 <option>Socjologia</option>
                             </optgroup>
                         </select><br>
@@ -164,13 +165,19 @@
 
                     </fieldset>
 
-                    <input type="checkbox" id="rodo-accepted" name="rodo-accepted" value="true" required>
+                    <label class="uwu-checkbox">
+                        <input type="checkbox" id="rodo-accepted" name="rodo-accepted" value="true" required>
+                        <span><i></i></span>
+                    </label>
                     <label for="rodo-accepted">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu przeprowadzenia procesu rekrutacji</label><br>
 
                     <input type="submit" class="button-element">
 
                 </form>
+            </div>
 
+            <div class="info-content">
+                <p class="submitted-link-desc">Przejrzyj listę <a href="irk-submissions.html">przesłanych zgłoszeń.</a></p>
             </div>
 
         </section>

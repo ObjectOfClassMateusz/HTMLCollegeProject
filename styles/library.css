@@ -154,17 +154,77 @@
 
 
 .library-catalog {
+    font-family: 'Cabin';
+    font-size: 1.4em;
     box-sizing: border-box;
-    width: min(100%, 1600px);
+    width: min(100%, 1400px);
     padding: 0px 100px;
     margin: 30px auto;
-    font-family: 'Cabin';
+    display: flex;
+    flex-direction: column;
 }
 
-.library-catalog h1 {
+.library-catalog hr {
+    box-sizing: border-box;
+    margin: 30px 0px;
+    border: none;
+    border-bottom: 4px solid green;
+    border-radius: 2px;
+}
+
+#library-books-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#library-books-list .book-title {
+    font-style: italic;
+    font-size: 2em;
+}
+
+
+.library-navbar {
+    font-family: 'Cabin';
+    background-color: green;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.library-navbar h1 {
+    font-family: Cabin;
     font-size: 3em;
     text-transform: capitalize;
-    margin-left: 50px;
-    margin-bottom: 30px;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+}
+
+.library-navbar-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.library-navbar-form .library-navbar-label {
+    color: white;
+}
+.library-navbar-form .library-navbar-label:hover {
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    .library-catalog {
+        padding: 0px 10px;
+    }
+
+    .library-navbar-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
 

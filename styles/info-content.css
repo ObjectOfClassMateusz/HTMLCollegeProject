@@ -8,9 +8,16 @@
     padding: 0px 100px;
     width: min(100%, 1600px);
     margin: 0px auto 50px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-content h1 {
+    font-size: 3em;
+    margin: 10px 10px 10px 20px;
+}
+
+.info-content .faculties-header {
     font-size: 4em;
     margin: 10px 10px 10px 20px;
 }
@@ -24,8 +31,14 @@
     margin: 10px 50px;
 }
 
+.info-content h3 {
+    font-size: 2em;
+    margin: 30px 50px;
+}
+
 .info-content hr {
-    border: 1px solid green;
+    border: 3px solid green;
+    border-radius: 3px;
     margin: 30px 0px;
 }
 
@@ -134,4 +147,39 @@
     font-size: 1em;
 }
 
+
+.info-content .submitted-link-desc {
+    text-align: center;
+}
+
+.info-content .submitted-link-desc::first-letter {
+    font-size: 1em;
+}
+
+
+.info-content address {
+    font-style: normal;
+}
+
+
+iframe.embedded-map {
+    width: 80vw;
+    height: 60vw;
+
+    margin: 50px 0px;
+
+    box-shadow: 0 0 20px black;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    align-self: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    iframe.embedded-map {
+        width: 95vw;
+        height: 50vh;
+    }
+}
 

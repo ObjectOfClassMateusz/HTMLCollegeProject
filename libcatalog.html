@@ -31,9 +31,9 @@
                     <ul>
                         <li><a href="./index.html">Uczelnia</a></li>
                         <li><a href="#">Studenci</a></li>
-                        <li><a href="#">Kampus</a></li>
+                        <li><a href="./campus.html">Kampus</a></li>
                         <li><a href="#">Nauka</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="./contact.html">Kontakt</a></li>
                         <li><a href="./irk.html">IRK</a></li>
                         <li><a href="#">Sylabus</a></li>
                         <li><a href="#">Kadra</a></li>
@@ -49,18 +49,62 @@
             </sidepanel>
             
 
-            <div class="library-catalog">
+            
+
+            <div class="library-navbar">
                 <h1>Katalog biblioteczny</h1>
 
-                <form class="styled-form" method="post" action="https://httpbin.org/post">
-                    <label for="searchbar">Tytuł do wyszukania:</label>
+                <form class="styled-form library-navbar-form" id="libcatalog-form">
+                    <label for="searchbar" class="library-navbar-label">Tytuł do wyszukania:</label>
+
                     <input type="search" id="searchphrase" name="searchphrase" class="searchbar" placeholder="Wpisz frazę">
-                    <input type="button" value="Filtry" class="filter-expand">
-                    <input type="submit" value="Filtruj" class="button-element">
-                    <input type="button" value="Wyczyść filtry" id="clearbutton" class="button-element">
+
+                    <div>
+                        <div class="dropdown">
+                            <input type="button" value="Sortowanie" class="dropdown-button">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><label><input type="radio" id="alphabetical-title" name="sorting" value="alphabetical-title" checked><span>Alfabetyczne po tytule</span></label></li>
+                                    <li><label><input type="radio" id="alphabetical-author" name="sorting" value="alphabetical-author"><span>Alfabetyczne po autorze</span></label></li>
+                                    <li><label><input type="radio" id="count-ascending" name="sorting" value="count-ascending"><span>Po liczbie egzemplarzy: rosnąco</span></label></li>
+                                    <li><label><input type="radio" id="count-descending" name="sorting" value="count-descending"><span>Po liczbie egzemplarzy: malejąco</span></label></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <input type="button" value="Kategorie" class="dropdown-button">
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><label><input type="checkbox" name="forests" id="forests" value="true" checked><span>Leśnictwo</span></label></li>
+                                    <li><label><input type="checkbox" name="informatics" id="informatics" value="true" checked><span>Informatyka</span></label></li>
+                                    <li><label><input type="checkbox" name="maths" id="maths" value="true" checked><span>Matematyka</span></label></li>
+                                    <li><label><input type="checkbox" name="architecture" id="architecture" value="true" checked><span>Architektura</span></label></li>
+                                    <li><label><input type="checkbox" name="economy" id="economy" value="true" checked><span>Ekonomia</span></label></li>
+                                    <li><label><input type="checkbox" name="philosophy" id="philosophy" value="true" checked><span>Filozofia</span></label></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Szukaj" class="button-element">
+                        <input type="button" value="Wyczyść filtry" id="clearbutton" class="button-element">
+                    </div>
                 </form>
+
             </div>
 
+            <div class="library-catalog">
+                <span>Kategorie: <span id="categories-output"></span></span><br>
+                <span>Sortowanie: <span id="sorting-output"></span></span>
+
+                <hr>
+
+                <div id="library-books-list">
+                    
+                </div>
+            </div>
 
         </section>
         <footer class="footer">
