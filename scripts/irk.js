@@ -1,6 +1,6 @@
 let irkForm = document.getElementById('irk-form')
 
-const irkSubmitUrl = 'http://localhost:3000/irk-submissions'
+const irkSubmitUrl = 'http://localhost:3000/irk-submissions-list'
 
 irkForm.addEventListener('submit', (event) => {
     event.preventDefault()

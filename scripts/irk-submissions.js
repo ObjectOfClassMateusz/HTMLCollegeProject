@@ -1,6 +1,6 @@
 let outputList = document.getElementById('irk-submission-list')
 
-const irkSubmitUrl = 'http://localhost:3000/irk-submissions'
+const irkSubmitUrl = 'http://localhost:3000/irk-submissions-list'
 
 
 function studiesTypeToDisplayString(studiesType) {

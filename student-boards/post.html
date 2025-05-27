@@ -84,8 +84,10 @@
                     return "<div class='text'><b>Anonymous " + msg["user-id"] + "</b><br/> " + msg.text+'</div>';
                 }).join("");
 
-                postReplies.innerHTML += messagesDetails.map(msg => {
-                    return "<div class='text'><b>Anonymous " + msg["id"] + "</b><br/> " + msg.text+'</div>';
+                postReplies.innerHTML += messagesDetails
+                .filter(msg => msg.postId == postNumber) // Only show messages for this thread
+                .map(msg => {
+                    return "<div class='text'><b>Anonymous " + msg["id"] + "</b><br/> " + msg.text + '</div>';
                 }).join("");
 
 
@@ -116,7 +118,8 @@
             },
             body: JSON.stringify({
                 id: localStorage.getItem('cookieConsent') ,
-                text: replyInput.value
+                text: replyInput.value,
+                postId: postNumber // Add this line
             })
             })
             .then(response => response.json())
