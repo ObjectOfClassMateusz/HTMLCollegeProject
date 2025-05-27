@@ -117,9 +117,7 @@
       ]
     }
   ],
-  "user-messages": [
-    
-  ],
+  "user-messages": [],
   "library-books": [
     {
       "title": "Polska naszych marzeń",
@@ -243,7 +241,7 @@
       "surname": "Kozłowski",
       "birthplace": "Szczebrzeszyn",
       "birthdate": "1996-05-29",
-      "gender": "other",
+      "gender": "male",
       "email": "balt@opel.com",
       "tel": "",
       "documentType": "matura-pre2015",
@@ -268,6 +266,38 @@
       "indexNumber": "",
       "fieldOfStudy": "Spekulacja cenami obszarów zielonych",
       "studiesType": "full-time-studies"
+    },
+    {
+      "id": "3481",
+      "name": "Edyta",
+      "surname": "Koroś",
+      "birthplace": "qSEGYJ",
+      "birthdate": "2025-05-27",
+      "gender": "female",
+      "email": "asegyhj@wp.pl",
+      "tel": "213456789",
+      "documentType": "olimpics-laureate",
+      "documentYear": "2003",
+      "documentId": "45",
+      "indexNumber": "345",
+      "fieldOfStudy": "Chemia ogólna",
+      "studiesType": "full-time-studies"
+    },
+    {
+      "id": "2da0",
+      "name": "Karol",
+      "surname": "Zach",
+      "birthplace": "waedghj",
+      "birthdate": "2025-05-27",
+      "gender": "male",
+      "email": "asdfg@wp.pl",
+      "tel": "2345665",
+      "documentType": "matura-2023",
+      "documentYear": "2000",
+      "documentId": "2345",
+      "indexNumber": "34567u",
+      "fieldOfStudy": "Pedagogika ruska",
+      "studiesType": "part-time-studies"
     }
   ]
 }

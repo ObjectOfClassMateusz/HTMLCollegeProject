@@ -4,12 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Katalog biblioteczny | Szkoła Dziwnych Działań w Warszawie</title>
+    <title>Szkoła Dziwnych Działań w Warszawie</title>
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <script src="./scripts/header.js"></script>
-    <script src="./scripts/libcatalog.js" defer></script>
+    <script>
+        //localStorage.clear();
+
+        function checkCookie() {
+            const annoybackground = document.getElementById("annoyBackgroundId");
+            const sellYourSoul = document.getElementById("sellYourSoulId");
+            if(localStorage.getItem('cookieConsent'))
+            {
+                annoybackground.style.display = "none";
+            }
+            else{
+                annoybackground.style.display = "flex";
+            }
+        }
+
+
+        const setCookie = (name, value, days,userID) => {
+            const annoybackground = document.getElementById("annoyBackgroundId");
+            const sellYourSoul = document.getElementById("sellYourSoulId");
+
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            localStorage.setItem(name, userID);
+            annoybackground.style.display = "none";
+        };
+
+        function logCookie() 
+        {
+            console.log(localStorage.getItem('cookieConsent'));
+        };
+
+
+        
+
+    
+    </script>
 </head>
-<body>
+<body onload="checkCookie()">
     <main class="main">
         <section class="main-content">
             <header>
@@ -64,65 +104,16 @@
                     </li>
                 </ul>
             </sidepanel>
-            
-
-            
-
-            <div class="library-navbar">
-                <h1>Katalog biblioteczny</h1>
-
-                <form class="styled-form library-navbar-form" id="libcatalog-form">
-                    <label for="searchbar" class="library-navbar-label">Tytuł do wyszukania:</label>
-
-                    <input type="search" id="searchphrase" name="searchphrase" class="searchbar" placeholder="Wpisz frazę">
-
-                    <div>
-                        <div class="dropdown">
-                            <input type="button" value="Sortowanie" class="dropdown-button">
-                            <div class="dropdown-content">
-                                <ul>
-                                    <li><label><input type="radio" id="alphabetical-title" name="sorting" value="alphabetical-title" checked><span>Alfabetyczne po tytule</span></label></li>
-                                    <li><label><input type="radio" id="alphabetical-author" name="sorting" value="alphabetical-author"><span>Alfabetyczne po autorze</span></label></li>
-                                    <li><label><input type="radio" id="count-ascending" name="sorting" value="count-ascending"><span>Po liczbie egzemplarzy: rosnąco</span></label></li>
-                                    <li><label><input type="radio" id="count-descending" name="sorting" value="count-descending"><span>Po liczbie egzemplarzy: malejąco</span></label></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="dropdown">
-                            <input type="button" value="Kategorie" class="dropdown-button">
-                            <div class="dropdown-content">
-                                <ul>
-                                    <li><label><input type="checkbox" name="forests" id="forests" value="true" checked><span>Leśnictwo</span></label></li>
-                                    <li><label><input type="checkbox" name="informatics" id="informatics" value="true" checked><span>Informatyka</span></label></li>
-                                    <li><label><input type="checkbox" name="maths" id="maths" value="true" checked><span>Matematyka</span></label></li>
-                                    <li><label><input type="checkbox" name="architecture" id="architecture" value="true" checked><span>Architektura</span></label></li>
-                                    <li><label><input type="checkbox" name="economy" id="economy" value="true" checked><span>Ekonomia</span></label></li>
-                                    <li><label><input type="checkbox" name="philosophy" id="philosophy" value="true" checked><span>Filozofia</span></label></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Szukaj" class="button-element">
-                        <input type="button" value="Wyczyść filtry" id="clearbutton" class="button-element">
-                    </div>
-                </form>
-
-            </div>
-
-            <div class="library-catalog">
-                <span>Kategorie: <span id="categories-output"></span></span><br>
-                <span>Sortowanie: <span id="sorting-output"></span></span>
-
-                <hr>
-
-                <div id="library-books-list">
-                    
+            <aside class="slider-container">
+                <div class="slider-wrapper">
+                    <video autoplay muted class="event-image">
+                        <source src="./img/videos/Voicy_Demoman Laughing.mp4"  id="vid" type="video/mp4">
+                    </video>
+                    <script>
+                        document.getElementById('vid').play();
+                    </script>
                 </div>
-            </div>
-
+            </aside>
         </section>
         <footer class="footer">
             <div class="footer-content">
@@ -134,6 +125,7 @@
                         <li><a href="#">Polityka prywatności</a></li>
                         <li><a href="#">Regulamin</a></li>
                         <li><a href="#">Cookies</a></li>
+
                     </ul>
                 </div>
                 <div class="footer-section">

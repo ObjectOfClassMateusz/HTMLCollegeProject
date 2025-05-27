@@ -28,7 +28,7 @@ irkForm.addEventListener('submit', (event) => {
     })
     .then(response => response.json())
     .then(data => {
-        window.location.replace('../irk-submissions.html')
+        window.location.replace('./irk-submissions.html')
     })
 })
 

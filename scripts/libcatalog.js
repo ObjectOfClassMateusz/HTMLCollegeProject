@@ -1,6 +1,9 @@
 let catalogForm = document.getElementById('libcatalog-form')
 
+const getParams = new URLSearchParams(window.location.search);
+const searchphrase = getParams.get('searchphrase');
 let searchbar = document.getElementById('searchphrase')
+searchbar.value = searchphrase ? searchphrase : ''
 
 let alphabeticalTitleSortButton = document.getElementById('alphabetical-title')
 let alphabeticalAuthorSortButton = document.getElementById('alphabetical-author')

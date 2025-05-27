@@ -9,6 +9,7 @@
         //
         const getParams = new URLSearchParams(window.location.search);
         const postNumber = getParams.get('p');
+        
         const setThreadCategoryImage = () => 
         {
             const threadCategory = document.getElementById("threadCategory");
@@ -128,7 +129,7 @@
             console.error('Error:', error);
             });
 
-            //location.reload(true);
+            location.reload(true);
         };
 
         const showReply = () =>{
