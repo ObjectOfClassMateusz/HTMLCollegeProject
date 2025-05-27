@@ -29,7 +29,7 @@ sellyoursoul{
     padding: 20px;
     animation: skeletonShowsUp 1s ease-in;
 
-    font-size: 20px;
+    font-size: 1em;
 }
 
 sellyoursoul img{
@@ -44,10 +44,9 @@ sellyoursoul button{
 }
 
 
-@media screen and (max-width: 771px) {
+@media screen and (max-width: 600px) {
     sellyoursoul {
-        width: 42vw;
-        font-size: 1.7vw;
+        width: 90vw;
     }
     sellyoursoul img{
     width: 25vw;
