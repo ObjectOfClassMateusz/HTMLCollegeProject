@@ -58,9 +58,10 @@
             const postDiv = document.getElementById("postDetails");
             try {
                 const response = await fetch("http://localhost:3000/posts/" + postNumber);
+                const response2 = await fetch("http://localhost:3000/user-messages");
                 if (!response.ok) throw new Error("Network response was not ok");
                 const postDetails = await response.json();
-                console.log("Post details: ", postDetails);
+                const messagesDetails = await response2.json();
 
                 postDiv.innerHTML = "<div >File "+`<a href=# style="color:green;">`+postDetails["image-name"]+`</a></div>`;
                 const postImage = document.createElement("img");
@@ -78,6 +79,17 @@
                     return "<div class='text'><b>Anonymous " + msg["user-id"] + "</b><br/> " + msg.text+'</div>';
                 }).join("");
 
+                postReplies.innerHTML = postDetails.messages.slice(1).map(msg => {
+                    return "<div class='text'><b>Anonymous " + msg["user-id"] + "</b><br/> " + msg.text+'</div>';
+                }).join("");
+
+                postReplies.innerHTML += messagesDetails.map(msg => {
+                    return "<div class='text'><b>Anonymous " + msg["id"] + "</b><br/> " + msg.text+'</div>';
+                }).join("");
+
+
+                
+
                 postDiv.appendChild(postImage);
                 postDiv.appendChild(postOP);
                 postDiv.appendChild(postReplies);   
@@ -90,7 +102,46 @@
 
         const addMessage = async () => 
         {
-            console.log(localStorage.getItem('cookieConsent'));
+            if(localStorage.getItem('cookieConsent')=='null')
+            {
+                alert("You must accept cookies to post a reply.");
+                return "EEEEEE";
+            }
+
+
+            const replyInput = document.getElementById("reply");
+            fetch('http://localhost:3000/user-messages', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: localStorage.getItem('cookieConsent') ,
+                text: replyInput.value
+            })
+            })
+            .then(response => response.json())
+            .then(data => {
+            console.log('Record added:', data);
+            })
+            .catch(error => {
+            console.error('Error:', error);
+            });
+
+            //location.reload(true);
+        };
+
+        const showReply = () =>{
+            const replyInput = document.getElementById("reply");
+            const button = document.getElementById("button_1");
+            const showReplyButton = document.getElementById("showR");
+            if (replyInput.style.display === "none" || replyInput.style.display === "") 
+            {
+                replyInput.style.display = "block";
+                button.style.display = "block";
+                showReplyButton.style.display = "none";
+            } 
+
         };
         
     </script>
@@ -161,8 +212,9 @@
             </center>
             <hr/>
             <div class="smallDetails">
-                <button onclick="addMessage();">[Post a Reply]</button>
-                <hr/>
+                <button id="showR" onclick="showReply();">[Post a Reply]</button>
+                <input type="text" id="reply"/>
+                <button id="button_1" onclick="addMessage();">Post</button>
             </div>
             <hr style="width: 100%;"/>
             <div id="postDetails">

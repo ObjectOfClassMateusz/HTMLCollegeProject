@@ -176,3 +176,8 @@ body{
     text-decoration: underline;
     color:green;
 }
+
+
+#reply , #button_1{
+    display: none;
+}

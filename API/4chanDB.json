@@ -117,145 +117,157 @@
       ]
     }
   ],
-  "user-messages":[
+  "user-messages": [
     
+  ],
+  "library-books": [
+    {
+      "title": "Polska naszych marzeń",
+      "authors": "Jarosław Kaczyński",
+      "category": "philosophy",
+      "count": 6,
+      "id": "2a2b"
+    },
+    {
+      "title": "Teoria układów cyfrowych",
+      "authors": "Henryk Kruszewski, Andrzej Rydzewski, Andrzej Śluzek",
+      "category": "informatics",
+      "count": 90,
+      "id": "e5cd"
+    },
+    {
+      "title": "Wprowadzenie do układów elektrycznych i elektronicznych",
+      "authors": "Khalid Saeed, Marek Parfieniuk",
+      "category": "informatics",
+      "count": 19,
+      "id": "6d86"
+    },
+    {
+      "title": "Lasy Polski",
+      "authors": "Jarosław Chmielewski",
+      "category": "forests",
+      "count": 123,
+      "id": "c775"
+    },
+    {
+      "title": "Budynki Gdańska",
+      "authors": "Grzegorz Brzęczyszczykiewicz",
+      "category": "architecture",
+      "count": 97,
+      "id": "9dc7"
+    },
+    {
+      "title": "Ekonomia neoliberalna",
+      "authors": "Sławomir Mentzen",
+      "category": "economy",
+      "count": 323,
+      "id": "63ff"
+    },
+    {
+      "title": "Matematyka dyskretna",
+      "authors": "Mieczysław Bolewski",
+      "category": "maths",
+      "count": 19,
+      "id": "9acf"
+    },
+    {
+      "title": "Patopaństwo",
+      "authors": "Jan Śpiewak",
+      "category": "philosophy",
+      "count": 209,
+      "id": "c8e8"
+    },
+    {
+      "title": "Statystyka opisowa",
+      "authors": "Stefan Zakrzewski",
+      "category": "maths",
+      "count": 0,
+      "id": "640f"
+    },
+    {
+      "title": "Wycinka lasów",
+      "authors": "Bolesław Drwal",
+      "category": "forests",
+      "count": 9,
+      "id": "76ed"
+    },
+    {
+      "title": "Inwestycje w nieruchomości",
+      "authors": "Włodzimierz Brzdąc",
+      "category": "economy",
+      "count": 23,
+      "id": "5a19"
+    },
+    {
+      "title": "Narodziny tragedii",
+      "authors": "Friedrich Nietzsche",
+      "category": "philosophy",
+      "count": 42,
+      "id": "7e9f"
+    },
+    {
+      "title": "Opowiadanie o dekapitacji",
+      "authors": "Madeline Steward",
+      "category": "forests",
+      "count": 3,
+      "id": "6220"
+    },
+    {
+      "title": "Budowa mikrokawalerek",
+      "authors": "Rafał Brzoska",
+      "category": "architecture",
+      "count": 6,
+      "id": "6663"
+    }
+  ],
+  "irk-submissions": [
+    {
+      "id": "d8af",
+      "name": "Franciszek",
+      "surname": "Frączkowski",
+      "birthplace": "Warszawa",
+      "birthdate": "2004-06-24",
+      "gender": "male",
+      "email": "frano@onet.pl",
+      "tel": "23412652362",
+      "documentType": "matura-2023",
+      "documentYear": "2024",
+      "documentId": "573452",
+      "indexNumber": "",
+      "fieldOfStudy": "Spekulacje nieruchomościami",
+      "studiesType": "full-time-studies"
+    },
+    {
+      "id": "311e",
+      "name": "Baltazar",
+      "surname": "Kozłowski",
+      "birthplace": "Szczebrzeszyn",
+      "birthdate": "1996-05-29",
+      "gender": "other",
+      "email": "balt@opel.com",
+      "tel": "",
+      "documentType": "matura-pre2015",
+      "documentYear": "2014",
+      "documentId": "5475",
+      "indexNumber": "34234",
+      "fieldOfStudy": "Produkcja i badanie zawartości alkoholi",
+      "studiesType": "part-time-studies"
+    },
+    {
+      "id": "9e86",
+      "name": "Perpetuła",
+      "surname": "Chrzanowska",
+      "birthplace": "Wyszkoradów",
+      "birthdate": "2005-01-07",
+      "gender": "female",
+      "email": "percia@gmail.com",
+      "tel": "993285125",
+      "documentType": "olimpics-laureate",
+      "documentYear": "2025",
+      "documentId": "PB3245232",
+      "indexNumber": "",
+      "fieldOfStudy": "Spekulacja cenami obszarów zielonych",
+      "studiesType": "full-time-studies"
+    }
   ]
-,
-    "library-books": [
-        {
-            "title": "Polska naszych marzeń",
-            "authors": "Jarosław Kaczyński",
-            "category": "philosophy",
-            "count": 6
-        },
-        {
-            "title": "Teoria układów cyfrowych",
-            "authors": "Henryk Kruszewski, Andrzej Rydzewski, Andrzej Śluzek",
-            "category": "informatics",
-            "count": 90
-        },
-        {
-            "title": "Wprowadzenie do układów elektrycznych i elektronicznych",
-            "authors": "Khalid Saeed, Marek Parfieniuk",
-            "category": "informatics",
-            "count": 19
-        },
-        {
-            "title": "Lasy Polski",
-            "authors": "Jarosław Chmielewski",
-            "category": "forests",
-            "count": 123
-        },
-        {
-            "title": "Budynki Gdańska",
-            "authors": "Grzegorz Brzęczyszczykiewicz",
-            "category": "architecture",
-            "count": 97
-        },
-        {
-            "title": "Ekonomia neoliberalna",
-            "authors": "Sławomir Mentzen",
-            "category": "economy",
-            "count": 323
-        },
-        {
-            "title": "Matematyka dyskretna",
-            "authors": "Mieczysław Bolewski",
-            "category": "maths",
-            "count": 19
-        },
-        {
-            "title": "Patopaństwo",
-            "authors": "Jan Śpiewak",
-            "category": "philosophy",
-            "count": 209
-        },
-        {
-            "title": "Statystyka opisowa",
-            "authors": "Stefan Zakrzewski",
-            "category": "maths",
-            "count": 0
-        },
-        {
-            "title": "Wycinka lasów",
-            "authors": "Bolesław Drwal",
-            "category": "forests",
-            "count": 9
-        },
-        {
-            "title": "Inwestycje w nieruchomości",
-            "authors": "Włodzimierz Brzdąc",
-            "category": "economy",
-            "count": 23
-        },
-        {
-            "title": "Narodziny tragedii",
-            "authors": "Friedrich Nietzsche",
-            "category": "philosophy",
-            "count": 42
-        },
-        {
-            "title": "Opowiadanie o dekapitacji",
-            "authors": "Madeline Steward",
-            "category": "forests",
-            "count": 3
-        },
-        {
-            "title": "Budowa mikrokawalerek",
-            "authors": "Rafał Brzoska",
-            "category": "architecture",
-            "count": 6
-        }
-    ],
-
-    "irk-submissions": [
-        {
-        "id": "d8af",
-        "name": "Franciszek",
-        "surname": "Frączkowski",
-        "birthplace": "Warszawa",
-        "birthdate": "2004-06-24",
-        "gender": "male",
-        "email": "frano@onet.pl",
-        "tel": "23412652362",
-        "documentType": "matura-2023",
-        "documentYear": "2024",
-        "documentId": "573452",
-        "indexNumber": "",
-        "fieldOfStudy": "Spekulacje nieruchomościami",
-        "studiesType": "full-time-studies"
-        },
-        {
-        "id": "311e",
-        "name": "Baltazar",
-        "surname": "Kozłowski",
-        "birthplace": "Szczebrzeszyn",
-        "birthdate": "1996-05-29",
-        "gender": "other",
-        "email": "balt@opel.com",
-        "tel": "",
-        "documentType": "matura-pre2015",
-        "documentYear": "2014",
-        "documentId": "5475",
-        "indexNumber": "34234",
-        "fieldOfStudy": "Produkcja i badanie zawartości alkoholi",
-        "studiesType": "part-time-studies"
-        },
-        {
-        "id": "9e86",
-        "name": "Perpetuła",
-        "surname": "Chrzanowska",
-        "birthplace": "Wyszkoradów",
-        "birthdate": "2005-01-07",
-        "gender": "female",
-        "email": "percia@gmail.com",
-        "tel": "993285125",
-        "documentType": "olimpics-laureate",
-        "documentYear": "2025",
-        "documentId": "PB3245232",
-        "indexNumber": "",
-        "fieldOfStudy": "Spekulacja cenami obszarów zielonych",
-        "studiesType": "full-time-studies"
-        }
-    ]
 }
