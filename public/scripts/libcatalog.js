@@ -156,19 +156,19 @@ function filterBooks() {
     let sortedBooks = filteredBooks.sort((a, b) => {
         if (alphabeticalTitleSortButton.checked === true)
         {
-            return a.title > b.title
+            return a.title.localeCompare(b.title)
         }
         else if (alphabeticalAuthorSortButton.checked === true)
         {
-            return a.authors > b.authors
+            return a.authors.localeCompare(b.authors)
         }
         else if (countAscendingSortButton.checked === true)
         {
-            return a.count > b.count
+            return a.count - b.count
         }
         else if (countDescendingSortButton.checked === true)
         {
-            return a.count < b.count
+            return b.count - a.count
         }
     })
 
