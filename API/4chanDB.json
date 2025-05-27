@@ -117,7 +117,9 @@
       ]
     }
   ],
-  "user-messages": [],
+  "user-messages": [
+
+  ],
   "library-books": [
     {
       "title": "Polska naszych marzeń",
@@ -282,22 +284,6 @@
       "indexNumber": "345",
       "fieldOfStudy": "Chemia ogólna",
       "studiesType": "full-time-studies"
-    },
-    {
-      "id": "2da0",
-      "name": "Karol",
-      "surname": "Zach",
-      "birthplace": "waedghj",
-      "birthdate": "2025-05-27",
-      "gender": "male",
-      "email": "asdfg@wp.pl",
-      "tel": "2345665",
-      "documentType": "matura-2023",
-      "documentYear": "2000",
-      "documentId": "2345",
-      "indexNumber": "34567u",
-      "fieldOfStudy": "Pedagogika ruska",
-      "studiesType": "part-time-studies"
     }
   ]
 }

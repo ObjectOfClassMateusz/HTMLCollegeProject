@@ -108,8 +108,6 @@
                 alert("You must accept cookies to post a reply.");
                 return "EEEEEE";
             }
-
-
             const replyInput = document.getElementById("reply");
             fetch('http://localhost:3000/user-messages', {
             method: 'POST',
@@ -124,12 +122,13 @@
             .then(response => response.json())
             .then(data => {
             console.log('Record added:', data);
+            location.reload(true);
             })
             .catch(error => {
             console.error('Error:', error);
             });
 
-            location.reload(true);
+            
         };
 
         const showReply = () =>{
