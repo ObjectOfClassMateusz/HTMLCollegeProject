@@ -33,6 +33,8 @@ const booksUrl = 'http://localhost:3000/library-books'
 
 let books = []
 
+let fetchOk = true
+
 
 catalogForm.addEventListener("submit", (event) => {
     event.preventDefault()
@@ -123,6 +125,7 @@ function fetchBooks() {
     .catch(error => {
         console.log(error)
 
+        fetchOk = false
         updateBooksDisplay()
     })
 }
@@ -199,6 +202,16 @@ function categoryToDisplayName(category) {
 function updateBooksDisplay() {
     while (booksOutput.firstChild)
         booksOutput.removeChild(booksOutput.firstChild)
+
+    if (!fetchOk)
+    {
+        let errorMsg = document.createElement("H1")
+        errorMsg.textContent = "Nastąpił błąd przy pobieraniu danych!"
+        errorMsg.style.color = 'red'
+        errorMsg.style.textAlign = 'center'
+        booksOutput.appendChild(errorMsg)
+        return
+    }
 
     let filteredBooks = filterBooks()
 

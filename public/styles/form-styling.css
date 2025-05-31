@@ -380,6 +380,15 @@
 }
 
 
+#irk-error-output {
+    font-family: Cabin;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
+}
+
+
 
 @media screen and (max-width: 800px) {
     .form-page {

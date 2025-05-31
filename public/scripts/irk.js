@@ -33,7 +33,12 @@ irkForm.addEventListener('submit', (event) => {
     .then(response => response.json())
     .then(data => {
         window.location.replace('./irk-submissions.html')
-    }).catch(e => console.log(e))
+    }).catch(e => {
+        console.log(e)
+
+        let irkErrorOutput = document.getElementById('irk-error-output')
+        irkErrorOutput.textContent = "Wystąpił błąd przy przesyłaniu danych formularza!"
+    })
 })
 
 function ValidateIrkForm()
