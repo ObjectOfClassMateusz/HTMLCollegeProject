@@ -5,6 +5,7 @@
     height: 400px;
     perspective: 2000px;
     perspective-origin: 0 -500px;
+    pointer-events: none;
 }
 
 .book-cube-stage img {
@@ -20,6 +21,10 @@
     background-color: #60c2ef;
     border: 3px black solid;
     transform-origin: 50% 50% 0;
+}
+
+.book-cube-stage figure figcaption {
+    visibility: hidden;
 }
 
 .book-cube-stage .cube {
