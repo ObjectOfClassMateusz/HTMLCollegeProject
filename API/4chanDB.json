@@ -127,6 +127,16 @@
       "id": "9875785",
       "text": "Fatsoo",
       "postId": "3"
+    },
+    {
+      "id": "9875785",
+      "text": "check this out https:megnet::/765435678",
+      "postId": "5"
+    },
+    {
+      "id": "9875785",
+      "text": "Znajdz prace na olx",
+      "postId": "4"
     }
   ],
   "library-books": [
@@ -293,6 +303,22 @@
       "indexNumber": "345",
       "fieldOfStudy": "Chemia ogólna",
       "studiesType": "full-time-studies"
+    },
+    {
+      "id": "c9bc",
+      "name": "Kasper",
+      "surname": "Seweryn",
+      "birthplace": "Białystok",
+      "birthdate": "2025-05-27",
+      "gender": "male",
+      "email": "kasper@gmail.com",
+      "tel": "123456",
+      "documentType": "olimpics-laureate",
+      "documentYear": "2026",
+      "documentId": "34",
+      "indexNumber": "9000",
+      "fieldOfStudy": "Produkcja i badanie zawartości alkoholi",
+      "studiesType": "part-time-studies"
     }
   ]
 }
