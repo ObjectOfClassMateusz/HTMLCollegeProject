@@ -19,22 +19,27 @@
             {
                 case "1":
                     threadCategory.src = "../img/threads/title/Books.jpg";
+                    threadCategory.alt = "category_image_error";
                     title.innerHTML = "/b/ Books";
                     break;
                 case "2":
                     threadCategory.src = "../img/threads/title/egzamin.jpg";
+                    threadCategory.alt = "category_image_error";
                     title.innerHTML = "/td/ Exams";
                     break;
                 case "3":
                     threadCategory.src = "../img/threads/title/food.jpg";
+                    threadCategory.alt = "category_image_error";
                     title.innerHTML = "/fr/ Food/Canteen";
                     break;
                 case "4":
                     threadCategory.src = "../img/threads/title/praca_praca.JPG";
+                    threadCategory.alt = "category_image_error";
                     title.innerHTML = "/wat/ Work/Practices";
                     break;
                 case "5":
                     threadCategory.src = "../img/threads/title/lec.jpg";
+                    threadCategory.alt = "category_image_error";
                     title.innerHTML = "/lm/ Lectures";
                     const woda = document.createElement('script');
                     woda.src = 'woda.js';
@@ -43,6 +48,7 @@
                     break;
                 case "6":
                     threadCategory.src = "../img/threads/title/pierwszaki.jpg";
+                    threadCategory.alt = "category_image_error";
                     title.innerHTML = "/fdd/ First graders";
                     break;
                 default:
@@ -67,6 +73,7 @@
                 postDiv.innerHTML = "<div >File "+`<a href=# style="color:green;">`+postDetails["image-name"]+`</a></div>`;
                 const postImage = document.createElement("img");
                 postImage.src = "../img/threads/"+postDetails["image-name"];
+                threadCategory.alt = "thread_image_error";
                 postImage.className = "thread-image";
                 postImage.alt = "Post image";
 
