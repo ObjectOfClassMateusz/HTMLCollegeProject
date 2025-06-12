@@ -111,6 +111,10 @@
                 return "EEEEEE";
             }
             const replyInput = document.getElementById("reply");
+            
+            if (replyInput.value === "")
+                return "EEEEEE"
+
             fetch('http://localhost:3000/user-messages', {
             method: 'POST',
             headers: {

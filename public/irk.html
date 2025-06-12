@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <title>IRK | Szkoła Dziwnych Działań w Warszawie</title>
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <script src="./scripts/header.js"></script>
     <script src="./scripts/irk.js" defer></script>
 </head>
@@ -15,7 +15,7 @@
             <header>
                 <a href="./index.html">
                     <div class="roundButton">
-                        <img src="./img/logo.png" alt="NoImg">
+                        <img src="./img/logo.jpg" alt="NoImg">
                     </div>
                 </a>
                 <h1>Szkoła Dziwnych Działań w Warszawie</h1>
@@ -77,15 +77,19 @@
 
                         <label for="candidate-name">Imię (imiona):</label>
                         <input type="text" name="candidate-name" id="candidate-name" required><br>
+                        <div id="candidate-name-msg"></div>
 
                         <label for="surname">Nazwisko:</label>
                         <input type="text" name="surname" id="surname" required><br>
+                        <div id="surname-msg"></div>
 
                         <label for="birthplace">Miejsce urodzenia:</label>
                         <input type="text" name="birthplace" id="birthplace" required><br>
+                        <div id="birthplace-msg"></div>
 
                         <label for="birthdate">Data urodzenia</label>
                         <input type="date" name="birthdate" id="birthdate" required><br>
+                        <div id="birthdate-msg"></div>
 
                         <label for="gender">Płeć:</label>
                         <select name="gender" id="gender" required>
@@ -93,12 +97,15 @@
                             <option value="female">Kobieta</option>
                             <option value="male">Mężczyzna</option>
                         </select><br>
+                        <div id="gender-msg"></div>
 
                         <label for="email">E-mail:</label>
                         <input type="email" name="email" id="email" required><br>
+                        <div id="email-msg"></div>
 
                         <label for="phonenum">Telefon (opcjonalnie):</label>
                         <input type="tel" name="phonenum" id="phonenum">
+                        <div id="phonenum-msg"></div>
 
                     </fieldset>
 
@@ -114,15 +121,19 @@
                             <option value="european-finals">Matura europejska</option>
                             <option value="olimpics-laureate">Tegoroczny laureat Olimpiady</option>
                         </select><br>
+                        <div id="document-type-msg"></div>
 
                         <label for="document-year">Rok uzyskania dokumentu:</label>
                         <input type="number" name="document-year" id="document-year" min="1900" max="2099" required><br>
+                        <div id="document-year-msg"></div>
 
                         <label for="document-id">Identyfikator dokumentu:</label>
                         <input type="text" name="document-id" id="document-id" required><br>
+                        <div id="document-id-msg"></div>
 
                         <label for="index-number">Numer indeksu (opcjonalne, dotyczy tylko osób, które studiowały już na uczelni):</label>
                         <input type="text" name="index-number" id="index-number"><br>
+                        <div id="index-number-msg"></div>
                     </fieldset>
 
                     <fieldset>
@@ -168,6 +179,7 @@
                                 <option>Socjologia</option>
                             </optgroup>
                         </select><br>
+                        <div id="primary-field-of-study-msg"></div>
 
 
                         <fieldset class="radio-fieldset">
@@ -178,6 +190,7 @@
                             <input type="radio" id="part-time-studies" name="studies-type" value="part-time-studies" required>
                             <label for="part-time-studies">Studia zaoczne</label>
                         </fieldset>
+                        <div id="studies-type-msg"></div>
 
                     </fieldset>
 
@@ -186,11 +199,14 @@
                         <span><i></i></span>
                     </label>
                     <label for="rodo-accepted">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu przeprowadzenia procesu rekrutacji</label><br>
+                    <div id="rodo-accepted-msg"></div>
 
                     <input type="submit" class="button-element">
 
                 </form>
             </div>
+
+            <div id="irk-error-output"></div>
 
             <div class="info-content">
                 <p class="submitted-link-desc">Przejrzyj listę <a href="irk-submissions.html">przesłanych zgłoszeń.</a></p>

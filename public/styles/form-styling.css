@@ -54,6 +54,8 @@
     color: green;
 }
 
+
+
 .styled-form input[type=text], .styled-form input[type=number],
 .styled-form input[type=email], .styled-form input[type=tel],
 .styled-form input[type=date] {
@@ -80,6 +82,29 @@
 }
 
 
+.styled-form input[type=text]:user-invalid, .styled-form input[type=number]:user-invalid,
+.styled-form input[type=email]:user-invalid, .styled-form input[type=tel]:user-invalid,
+.styled-form input[type=date]:user-invalid {
+    border: 2px solid red;
+    box-shadow: inset 0 0 5px #438046;
+}
+
+.styled-form input[type=text]:hover:user-invalid, .styled-form input[type=number]:hover:user-invalid,
+.styled-form input[type=email]:hover:user-invalid, .styled-form input[type=tel]:hover:user-invalid,
+.styled-form input[type=date]:hover:user-invalid {
+    box-shadow: inset 0 0 5px #b1acac;
+    border: 2px solid red;
+}
+
+.styled-form input[type=text]:focus:user-invalid, .styled-form input[type=number]:focus:user-invalid,
+.styled-form input[type=email]:focus:user-invalid, .styled-form input[type=tel]:focus:user-invalid,
+.styled-form input[type=date]:focus:user-invalid {
+    box-shadow: inset 0 0 5px #ffb3b3;
+    border: 2px solid red;
+}
+
+
+
 .styled-form select {
     padding: 7px;
     margin: 10px;
@@ -100,6 +125,17 @@
 .styled-form select:focus {
     background-color: #007e00;
     border-bottom: 3px solid #004100;
+}
+.styled-form select:user-invalid {
+    background-color: #970101;
+    border-bottom: 3px solid #410000;
+}
+.styled-form select:hover:user-invalid {
+    background-color: #c20101;
+}
+.styled-form select:focus:user-invalid {
+    background-color: #7e0000;
+    border-bottom: 3px solid #410000;
 }
 
 
@@ -341,6 +377,15 @@
     bottom: 5px;
     border-radius: 0 0 6px 6px;
     background: #05be05;
+}
+
+
+#irk-error-output {
+    font-family: Cabin;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: red;
 }
 
 
