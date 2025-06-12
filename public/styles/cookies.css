@@ -1,4 +1,4 @@
-annoybackground{
+#annoyBackgroundId{
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +15,7 @@ annoybackground{
 }
 
 
-sellyoursoul{
+#sellYourSoulId{
     border: 10px ridge rgb(0, 50, 40);
     background-color: green;
     width: 400px;
@@ -32,12 +32,12 @@ sellyoursoul{
     font-size: 1em;
 }
 
-sellyoursoul img{
+#sellYourSoulId img{
     width: 200px;
     box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.816);
 }
 
-sellyoursoul button{
+#sellYourSoulId button{
     background-color: white;
     padding: 2px;
     color: green;
@@ -45,10 +45,10 @@ sellyoursoul button{
 
 
 @media screen and (max-width: 600px) {
-    sellyoursoul {
+    #sellYourSoulId {
         width: 90vw;
     }
-    sellyoursoul img{
+    #sellYourSoulId img{
     width: 25vw;
     box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.816);
     }

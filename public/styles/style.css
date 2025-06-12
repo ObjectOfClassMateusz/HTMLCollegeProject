@@ -51,7 +51,7 @@ green
     color: white;
 }
 
-ititled.center-title
+.ititled .center-title
 {
     text-align: center;
     font-family: "Lora", serif;
@@ -65,7 +65,7 @@ ititled.center-title
 }
 
 @media screen and (max-width:957px){
-    ititled.center-title
+    .ititled .center-title
     {
         text-align: center;
         font-family: "Lora", serif;
@@ -104,7 +104,7 @@ ititled.center-title
     gap: 6px;
 }
 
-bosscontainer{
+.bosscontainer{
     border: green 10px ridge;
     display: flex;
     flex-wrap: wrap;
