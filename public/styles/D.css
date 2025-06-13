@@ -1,0 +1,11 @@
+.dost{
+    font-size: 25px !important;
+    font-family: sans-serif;
+    color: black;
+    background-color: yellow;
+    padding: 2px;
+}
+
+.dost::first-letter{
+    font-size: 25px !important;
+}

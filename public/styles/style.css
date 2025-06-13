@@ -4,6 +4,10 @@
 @import url(./aside-event-slider.css);
 @import url(./event.css);
 
+@import url(./D.css);
+@import url(./DarkMode.css);
+
+
 @import url(./footer.css);
 
 @import url(./info-content.css);
@@ -51,7 +55,7 @@ green
     color: white;
 }
 
-.ititled .center-title
+.ititled , .center-title
 {
     text-align: center;
     font-family: "Lora", serif;
@@ -65,7 +69,7 @@ green
 }
 
 @media screen and (max-width:957px){
-    .ititled .center-title
+    .ititled , .center-title
     {
         text-align: center;
         font-family: "Lora", serif;

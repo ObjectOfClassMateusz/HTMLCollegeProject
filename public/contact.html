@@ -14,33 +14,37 @@
             <header>
                 <a href="./index.html">
                     <div class="roundButton">
-                        <img src="./img/logo.jpg" alt="NoImg">
+                        <img src="./img/logo.jpg" alt="Logo uczelni">
                     </div>
                 </a>
-                <h1>Szkoła Dziwnych Działań w Warszawie</h1>
-    
+                <h1 class="dpd">
+                    Szkoła Dziwnych Działań w Warszawie
+                </h1>
                 <div class="queue">
                     <div class="roundButton centering" onclick="backNavShowsUp();">
                         SDDW
                     </div>
+                    <div class="roundButton centering" id='remove'>
+                        ARIA
+                    </div>
                 </div>
                 <header>
                     <ul>
-                        <li><a href="./campus.html">Kampus</a></li>
-                        <li><a href="./contact.html">Kontakt</a></li>
-                        <li><a href="./irk.html">IRK</a></li>
-                        <li><a href="./kadra.html">Kadra</a></li>
-                        <li><a href="./faculties.html">Wydziały</a></li>
-                        <li><a href="./library.html">Biblioteka</a></li>
+                        <li><a class="dpd" href="./campus.html">Kampus</a></li>
+                        <li><a class="dpd" href="./contact.html">Kontakt</a></li>
+                        <li><a class="dpd" href="./irk.html">IRK</a></li>
+                        <li><a class="dpd" href="./kadra.html">Kadra</a></li>
+                        <li><a class="dpd" href="./faculties.html">Wydziały</a></li>
+                        <li><a class="dpd" href="./library.html">Biblioteka</a></li>
                     </ul>
                 </header>
             </header>
-            <div class="backNav sidepanel" id="backNavId">
+            <div class="sidepanel backNav" id="backNavId">
                 <button id="backNavButtId" onclick="backNavShowsUp();">
                     Wstecz
                 </button>
-                <h2>Panel Boczny</h2>
-                <p>
+                <h2 class="dpd">Panel Boczny</h2>
+                <p class="dpd">
                     Lorem Ipsum
                     dolor sit amet consectetur adipiscing elit. Quisque
                      faucibus ex sapien vitae pellentesque sem placerat. 
@@ -52,12 +56,12 @@
                 </p>
                 <ul>
                     <li>
-                        <a href="./pomoc.html">
+                        <a class="dpd" href="./pomoc.html">
                             Stypendia i Pomoc
                         </a>
                     </li>
                     <li>
-                        <a href="./student-boards/student-boards.html">
+                        <a class="dpd" href="./student-boards/student-boards.html">
                             Boardy Studenckie
                         </a>
                     </li>
@@ -66,17 +70,17 @@
                 
             <div class="info-content">
                 
-                <h1>Kontakt</h1>
+                <h1 class="dpd">Kontakt</h1>
 
-                <ul>
+                <ul class="dpd">
                     <li><address>E-mail: faq.u@sddw.edu.pl</address></li>
                     <li><address>Telefon rektoratu: +48 140633900</address></li>
                 </ul>
 
-                <h2 class="h2-smaller-version">Godziny pracy rektoratu</h2>
+                <h2 class="h2-smaller-version dpd">Godziny pracy rektoratu</h2>
 
                 <div class="styled-table-container">
-                    <table class="styled-table">
+                    <table class="styled-table dpd">
                         <thead>
                             <tr>
                                 <th>Rodzja tygodnia</th>
@@ -92,23 +96,23 @@
                         <tbody>
                             <tr>
                                 <td>Nieparzysty</td>
-                                <td>9:00-12:00</td>
-                                <td>9:00-12:00</td>
-                                <td>12:00-16:00</td>
-                                <td>7:00-14:00</td>
-                                <td>7:00-14:00</td>
-                                <td>11:00-13:00</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>00:00-00:50</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>Rektorat nieczynny</td>
                                 <td>Rektorat nieczynny</td>
                             </tr>
                             <tr>
                                 <td>Parzysty</td>
-                                <td>7:00-14:00</td>
-                                <td>11:00-12:00</td>
-                                <td>14:00-17:00</td>
-                                <td>16:00-18:00</td>
-                                <td>6:00-11:00</td>
-                                <td>12:00-14:00</td>
-                                <td>12:00-13:00</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>Rektorat nieczynny</td>
+                                <td>12:00-12:05</td>
+                                <td>Rektorat nieczynny</td>
                             </tr>
                         </tbody>
                     </table>
@@ -140,5 +144,6 @@
             </div>
         </footer>
     </main>
+    <script src="./scripts/dostp.js"></script>
 </body>
 </html>

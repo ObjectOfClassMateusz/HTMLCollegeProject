@@ -15,33 +15,37 @@
             <header>
                 <a href="./index.html">
                     <div class="roundButton">
-                        <img src="./img/logo.jpg" alt="NoImg">
+                        <img src="./img/logo.jpg" alt="Logo uczelni">
                     </div>
                 </a>
-                <h1>Szkoła Dziwnych Działań w Warszawie</h1>
-    
+                <h1 class="dpd">
+                    Szkoła Dziwnych Działań w Warszawie
+                </h1>
                 <div class="queue">
                     <div class="roundButton centering" onclick="backNavShowsUp();">
                         SDDW
                     </div>
+                    <div class="roundButton centering" id='remove'>
+                        ARIA
+                    </div>
                 </div>
                 <header>
-                    <ul>
-                        <li><a href="./campus.html">Kampus</a></li>
-                        <li><a href="./contact.html">Kontakt</a></li>
-                        <li><a href="./irk.html">IRK</a></li>
-                        <li><a href="./kadra.html">Kadra</a></li>
-                        <li><a href="./faculties.html">Wydziały</a></li>
-                        <li><a href="./library.html">Biblioteka</a></li>
+                    <ul class="light-mode"  >
+                        <li><a class="dpd" href="./campus.html">Kampus</a></li>
+                        <li><a class="dpd" href="./contact.html">Kontakt</a></li>
+                        <li><a class="dpd" href="./irk.html">IRK</a></li>
+                        <li><a class="dpd" href="./kadra.html">Kadra</a></li>
+                        <li><a class="dpd" href="./faculties.html">Wydziały</a></li>
+                        <li><a class="dpd" href="./library.html">Biblioteka</a></li>
                     </ul>
                 </header>
             </header>
-            <div class="backNav sidepanel" id="backNavId">
+            <div class="sidepanel backNav" id="backNavId">
                 <button id="backNavButtId" onclick="backNavShowsUp();">
                     Wstecz
                 </button>
-                <h2>Panel Boczny</h2>
-                <p>
+                <h2 class="dpd">Panel Boczny</h2>
+                <p class="dpd">
                     Lorem Ipsum
                     dolor sit amet consectetur adipiscing elit. Quisque
                      faucibus ex sapien vitae pellentesque sem placerat. 
@@ -53,12 +57,12 @@
                 </p>
                 <ul>
                     <li>
-                        <a href="./pomoc.html">
+                        <a class="dpd" href="./pomoc.html">
                             Stypendia i Pomoc
                         </a>
                     </li>
                     <li>
-                        <a href="./student-boards/student-boards.html">
+                        <a class="dpd" href="./student-boards/student-boards.html">
                             Boardy Studenckie
                         </a>
                     </li>
@@ -67,12 +71,12 @@
                 
             <div class="form-page">
 
-                <h1>Internetowa Rejestracja Kandydatów</h1>
+                <h1 class="dpd">Internetowa Rejestracja Kandydatów</h1>
 
                 <form class="styled-form irk-form" id="irk-form">
                     <h2>Rejestracja na semestr zimowy 2025/2026</h2>
                     
-                    <fieldset>
+                    <fieldset class="dpd">
                         <legend>Dane osobowe</legend>
 
                         <label for="candidate-name">Imię (imiona):</label>
@@ -109,7 +113,7 @@
 
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="dpd">
                         <legend>Przyjęcie na uczelnię</legend>
                         
                         <label for="document-type">Rodzaj dokumentu uprawniającego do podjęcia studiów:</label>
@@ -136,7 +140,7 @@
                         <div id="index-number-msg"></div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="dpd">
                         <legend>Studia</legend>
 
                         <label for="primary-field-of-study">Kierunek studiów:</label>
@@ -209,7 +213,7 @@
             <div id="irk-error-output"></div>
 
             <div class="info-content">
-                <p class="submitted-link-desc">Przejrzyj listę <a href="irk-submissions.html">przesłanych zgłoszeń.</a></p>
+                <p class="submitted-link-desc dpd">Przejrzyj listę <a href="irk-submissions.html">przesłanych zgłoszeń.</a></p>
             </div>
 
         </section>
@@ -236,5 +240,6 @@
             </div>
         </footer>
     </main>
+    <script src="./scripts/dostp.js"></script>
 </body>
 </html>

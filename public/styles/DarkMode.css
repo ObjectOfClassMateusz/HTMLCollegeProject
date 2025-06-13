@@ -1,0 +1,13 @@
+.dark{
+    background-color: black;
+}
+
+.dark2{
+    background-color: black;
+    border-color: white;
+}
+
+.dark3{
+    background-color: black;
+    color: white !important;
+}

@@ -46,39 +46,46 @@
     
     </script>
 </head>
-<body onload="checkCookie()">
-    <main class="main">
+<body onload="checkCookie()" >
+    <main class="main bedark" id="text-box">
         <section class="main-content">
             <header>
                 <a href="./index.html">
                     <div class="roundButton">
-                        <img src="./img/logo.jpg" alt="NoImg">
+                        <img src="./img/logo.jpg" alt="Logo uczelni">
                     </div>
                 </a>
-                <h1>Szkoła Dziwnych Działań w Warszawie</h1>
-    
+                <h1 class="dpd">
+                    Szkoła Dziwnych Działań w Warszawie
+                </h1>
                 <div class="queue">
                     <div class="roundButton centering" onclick="backNavShowsUp();">
                         SDDW
                     </div>
+                    <div class="roundButton centering" id='remove'>
+                        ARIA
+                    </div>
+                    <div class="roundButton centering" id='black'>
+                        DarkMode
+                    </div>
                 </div>
-                <header>
-                    <ul>
-                        <li><a href="./campus.html">Kampus</a></li>
-                        <li><a href="./contact.html">Kontakt</a></li>
-                        <li><a href="./irk.html">IRK</a></li>
-                        <li><a href="./kadra.html">Kadra</a></li>
-                        <li><a href="./faculties.html">Wydziały</a></li>
-                        <li><a href="./library.html">Biblioteka</a></li>
+                <header class="bedark2">
+                    <ul class="light-mode" >
+                        <li><a class="dpd bedark3" href="./campus.html">Kampus</a></li>
+                        <li><a class="dpd bedark3" href="./contact.html">Kontakt</a></li>
+                        <li><a class="dpd bedark3" href="./irk.html">IRK</a></li>
+                        <li><a class="dpd bedark3" href="./kadra.html">Kadra</a></li>
+                        <li><a class="dpd bedark3" href="./faculties.html">Wydziały</a></li>
+                        <li><a class="dpd bedark3" href="./library.html">Biblioteka</a></li>
                     </ul>
                 </header>
             </header>
-            <sidepanel class="backNav" id="backNavId">
+            <div class="sidepanel backNav" id="backNavId">
                 <button id="backNavButtId" onclick="backNavShowsUp();">
                     Wstecz
                 </button>
-                <h2>Panel Boczny</h2>
-                <p>
+                <h2 class="dpd">Panel Boczny</h2>
+                <p class="dpd">
                     Lorem Ipsum
                     dolor sit amet consectetur adipiscing elit. Quisque
                      faucibus ex sapien vitae pellentesque sem placerat. 
@@ -90,23 +97,23 @@
                 </p>
                 <ul>
                     <li>
-                        <a href="./pomoc.html">
+                        <a class="dpd" href="./pomoc.html">
                             Stypendia i Pomoc
                         </a>
                     </li>
                     <li>
-                        <a href="./student-boards/student-boards.html">
+                        <a class="dpd" href="./student-boards/student-boards.html">
                             Boardy Studenckie
                         </a>
                     </li>
                 </ul>
-            </sidepanel>
+            </div>
             <aside class="slider-container">
                 <div class="slider-wrapper">
                     <div class="slider">
                         <div id="slideOne">
                             <blockquote id="slide1">
-                                <i>Studiuj dla nas</i><br/> <p class="small"> a nie dla siebie</p>
+                                <i class="dpd">Studiuj dla nas</i><br/> <p class="small"> a nie dla siebie</p>
                                 <br/>
                                 <div class="left-text">
                                     <a href="./irk.html">
@@ -120,7 +127,7 @@
                                 <i class="white-text">
                                     Zasubskrybuj Newsletter
                                 </i>
-                                <p class="medium white-text">
+                                <p class="medium white-text dpd">
                                     Otrzymuj regularne informacje o ofercie edukacyjnej,
                                     projektach badawczych i wydarzeniach naukowych.<br/>
                                     Czy chcieliby być Państwo na bieżąco z najnowszymi <br/>
@@ -140,22 +147,22 @@
                                         Na Kampusie otworzono sklep monopolowy
                                     </div>
                                 </center>
-                                <p class="medium white-text">
+                                <p class="medium white-text dpd">
                                     <br/>
                                     Studenci oraz doktoranci wyrażają swoje zadowolenie z otwarcia.<br/>
                                     Zobacz relację z otwarcia oraz zdjęcia z wydarzenia.<br/>
                                 </p>
-                                <i class="white-text medium" style="margin: 0; padding:0;">
+                                <i class="white-text medium dpd" style="margin: 0; padding:0;">
                                     "(...)Nie mogłem sobie wyobrazić lepszego miejsca na prowadzenie labolatoriów. (...)"
                                     <p>- mówi prof. Gigachad dr hab. inż. Mieczysław Chlor </p>
                                 </i>
-                                <p class="white-text medium">
+                                <p class="white-text medium dpd">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                      laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                                       voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     
                                 </p>
-                                <div class="left-text">
+                                <div class="left-text dpd">
                                     <a href="#" class="hover-white-text">
                                         Dowiedz się więcej
                                     </a>
@@ -165,16 +172,16 @@
                         </div>
                         <div id="slideFour">
                             <blockquote id="slide4">
-                                <i class="white-text">
+                                <i class="white-text dpd">
                                     Dzień Ziemi 2025
                                 </i>
-                                <p class="medium white-text">
+                                <p class="medium white-text dpd">
                                     Dnia 22 kwietnia , na naszym kampusie zasadziliśmy <b>3</b> drzewa razem z ambasadorem Chin.
                                     <br/><br/><br/><br/>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.  
                                     Quisquam, voluptatibus. Quas voluptatibus, porteriores.
                                 </p>
-                                <div class="left-text">
+                                <div class="left-text dpd">
                                     <a href="#" class="hover-white-text">
                                         Zobacz zdjęcia
                                     </a>
@@ -190,21 +197,21 @@
                     <a href="#slide4"></a>
                 </div>
                 <div class="events-container">
-                    <div class="event-block">
+                    <div class="event-block bedark3">
                         <img src="./img/events/images2.jpg" alt="Event 1" class="event-image">
-                        <p class="event-text">Ogłoszone są godziny rektorskie od 27-28.05.2025. </p>
+                        <p class="event-text dpd">Ogłoszone są godziny rektorskie od 27-28.05.2025. </p>
                         <a href="#" class="event-link">Dowiedz się więcej</a>
                     </div>
-                    <div class="event-block">
+                    <div class="event-block bedark3">
                         <img src="./img/events/images.jpg" alt="Event 2" class="event-image">
-                        <p class="event-text"><b>UWAGA!</b> Remontowana jest sala WTC9/11. Doszło do kruszenia się drugiej ściany ...</p>
+                        <p class="event-text dpd"><b>UWAGA!</b> Remontowana jest sala WTC9/11. Doszło do kruszenia się drugiej ściany ...</p>
                         <a href="#" class="event-link">Dowiedz się więcej</a>
                     </div>
-                    <div class="event-block">
+                    <div class="event-block bedark3">
                         <video loop="true" autoplay="autoplay" muted class="event-image">
                             <source src="./img/videos/12432621_1920_1080_30fps.mp4" type="video/mp4">
                         </video>
-                        <p class="event-text">Studenci opantetowali sterowanie ludzkimi nerwami Transformatą Fouriera. Nadchodzi era CyberPunkowa !?</p>
+                        <p class="event-text dpd">Studenci opantetowali sterowanie ludzkimi nerwami Transformatą Fouriera. Nadchodzi era CyberPunkowa !?</p>
                         <a href="#" class="event-link">Dowiedz się więcej</a>
                     </div>
                 </div>
@@ -239,6 +246,8 @@
             </div>
         </footer>
     </main>
+    <script src="./scripts/dostp.js"></script>
+    <script src="./scripts/darkmode.js"></script>
     
     <div id="annoyBackgroundId">
         <div id="sellYourSoulId">
